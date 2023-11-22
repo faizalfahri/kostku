@@ -1,12 +1,16 @@
-import '../../dist/css/main.css'
+import "../../dist/css/main.css";
+import NavbarComponent from "../../components/NavbarComponent";
+import FooterComponent from "../../components/FooterComponent";
 
 const HomePage = () => {
   return (
     <div className="homepage">
-
+      <NavbarComponent />
       <div className="home-tittle">
         <h1>Ingin Mencari kost diarea Jabodetabek?</h1>
-        <h2>Booking Di <span>Kostku</span> aja</h2>
+        <h2>
+          Booking Di <span>Kostku</span> aja
+        </h2>
       </div>
 
       <div className="search-bar">
@@ -21,7 +25,7 @@ const HomePage = () => {
       </div>
 
       <div className="swipper"></div>
-
+      <FooterComponent />
     </div>
   );
 };
