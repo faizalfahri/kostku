@@ -1,11 +1,12 @@
-import "../../dist/css/main.css";
 import NavbarComponent from "../../components/NavbarComponent";
 import FooterComponent from "../../components/FooterComponent";
 
 const HomePage = () => {
   return (
-    <div className="homepage">
-      <NavbarComponent />
+    <div>
+      <NavbarComponent /> 
+      <div className="homepage">
+
       <div className="home-tittle">
         <h1>Ingin Mencari kost diarea Jabodetabek?</h1>
         <h2>
@@ -25,7 +26,8 @@ const HomePage = () => {
       </div>
 
       <div className="swipper"></div>
-      <FooterComponent />
+    </div>
+    <FooterComponent />
     </div>
   );
 };

@@ -5,6 +5,10 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+.button{
+    background-color: #190482 !important;
+    outline: none !important;
+}
 
 /* Navbar */
 .logo{
@@ -39,6 +43,7 @@
     font-weight: bold;
 }
 /* End Home Page */
+
 
 /* Login Page */
 .login{
@@ -118,19 +123,19 @@
 }
 
 .userlogin .choice{
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px; 
-  background-color: white; 
-  color: black; 
-  font-size: 16px; 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none; 
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    background-color: white; 
+    color: black; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: flex;
 }
 
 .userlogin .choice:hover {
@@ -182,7 +187,19 @@
     margin-right: 30rem;
 }
 
-
-
-
 /* End Login USer Page */
+
+
+/* Footer */
+.footer{
+    background-color: red !important;
+}
+.footer-kost{
+    font-weight: 600;
+    color: white;
+}
+.copyright{
+    color: white;
+}
+/* End Footer */
+

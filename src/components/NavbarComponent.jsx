@@ -19,7 +19,7 @@ const NavbarComponent = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#kost" className="nav-link">Cari Kost</Nav.Link>
             <Nav.Link href="#tentang" className="nav-link">Tentang Kami</Nav.Link>
-            <Button variant="primary">Masuk</Button>
+            <Button className="ms-3 button">Masuk</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

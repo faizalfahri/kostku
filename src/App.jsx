@@ -1,7 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
-
-
 import HomePage from "./pages/User/HomePage";
 import KostPage from "./pages/User/KostPage";
 import DetailKostPage from "./pages/User/DetailKostPage";
@@ -11,8 +8,6 @@ import UserLogin from "./pages/User/UserLogin";
 function App() {
   return (
     <div>
-      
-
       <Routes>
         <Route path="/" Component={HomePage} />
         <Route path="/kost" Component={KostPage} />
@@ -20,8 +15,6 @@ function App() {
         <Route path="/login" Component={Login} />
         <Route path="/userlogin" Component={UserLogin} />
       </Routes>
-
-    
     </div>
   );
 }
