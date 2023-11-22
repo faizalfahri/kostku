@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@200;300;400;600;700&display=swap');
+
+/* Navbar */
+* {
+    font-family: "Poppins", sans-serif;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.navbar{
+    padding: 1px 0 1px 0;
+    background-color: white !important;
+}
+.navbar .nav-link{
+    color: black;
+    font-weight: 500;
+}
