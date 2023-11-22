@@ -5,6 +5,10 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
+.button{
+    background-color: #190482 !important;
+    outline: none !important;
+}
 
 /* Navbar */
 .logo{
@@ -39,3 +43,17 @@
     font-weight: bold;
 }
 /* End Home Page */
+
+
+/* Footer */
+.footer{
+    background-color: red !important;
+}
+.footer-kost{
+    font-weight: 600;
+    color: white;
+}
+.copyright{
+    color: white;
+}
+/* End Footer */
