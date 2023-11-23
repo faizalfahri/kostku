@@ -42,7 +42,7 @@
 }
 .header-tittle {
   color: white;
-  padding: 80px 60px 20px 60px;
+  padding: 80px 0 20px 0;
 }
 .header-tittle h1 {
   margin-top: 50px;
@@ -55,7 +55,7 @@
 }
 .search-bar {
   display: flex;
-  padding: 10px 60px;
+  padding: 10px 0;
 }
 .search-bar input {
   padding: 13px;
@@ -79,7 +79,7 @@
   height: 100vh;
 }
 .section-tittle {
-  padding: 50px 60px 10px 60px;
+  padding: 50px 0 10px 0;
 }
 .line {
   height: 1.7px;
