@@ -1,27 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@200;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@200;300;400;600;700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-.button{
-    background-color: #190482 !important;
-    outline: none !important;
+.button {
+  background-color: #190482 !important;
+  outline: none !important;
 }
 
 /* Navbar */
-.logo{
-    height: 60px;
-    width: 60px;
+.logo {
+  height: 60px;
+  width: 60px;
 }
-.navbar{
-    padding: 1px 0 1px 0;
-    background-color: white !important;
+.navbar {
+  padding: 1px 0 1px 0;
+  background-color: white !important;
 }
-.navbar .nav-link{
-    color: black;
-    font-weight: 500;
+.navbar .nav-link {
+  color: black;
+  font-weight: 500;
 }
 /* End Navbar */
 
@@ -29,106 +29,121 @@
 
 /* Header */
 .headerpage {
-    margin-top: 10px;
-    width: 100%;
-    height: 100vh;
-    background: rgb(71,15,231);
-    background: linear-gradient(60deg, rgba(71,15,231,1) 0%, rgba(16,93,209,0.60) 64%, rgba(9,17,206,0.67) 100%);
+  margin-top: 10px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(71, 15, 231);
+  background: linear-gradient(
+    60deg,
+    rgba(71, 15, 231, 1) 0%,
+    rgba(16, 93, 209, 0.6) 64%,
+    rgba(9, 17, 206, 0.67) 100%
+  );
 }
 .header-tittle {
-    color: white;
-    padding: 80px 60px 20px 60px;
+  color: white;
+  padding: 80px 60px 20px 60px;
 }
 .header-tittle h1 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .header-tittle h2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .header-tittle h2 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 .search-bar {
-    display: flex;
-    padding: 10px 60px;
+  display: flex;
+  padding: 10px 60px;
 }
 .search-bar input {
-    padding: 13px;
-    width: 30%;
-    border-radius: 20px;
+  padding: 13px;
+  width: 30%;
+  border-radius: 20px;
 }
 .search-bar button {
-    margin-left: 20px;
-    font-size: 22px;
-    width: 10%;
-    border-radius: 20px;
-    background-color: rgba(25, 4, 130, 1);
-    color: white;
-    padding: 10px;
+  margin-left: 20px;
+  font-size: 22px;
+  width: 10%;
+  border-radius: 20px;
+  background-color: rgba(25, 4, 130, 1);
+  color: white;
+  padding: 10px;
 }
 /* End Header */
 
 /* Section Kost */
 .section-kost {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 .section-tittle {
-    padding: 50px 60px 10px 60px;
+  padding: 50px 60px 10px 60px;
 }
 .line {
-    height: 1.7px;
-    background-color: black;
-    width: 80px;
-    margin-left: 3px;
+  height: 1.7px;
+  background-color: black;
+  width: 80px;
+  margin-left: 3px;
 }
 .section-card {
-    display: flex;
-    justify-content: center;
-    padding: 60px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 20px 0;
 }
 .card {
-    margin: 0 20px 0 20px;
+  margin: 0 20px 0 20px;
 }
 /* End Section Kost*/
 
 /* End Home Page */
 
-
 /* Login Page */
-.login{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: rgb(101,116,224);
-    background: linear-gradient(0deg, rgba(101,116,224,0.41) 0%, rgba(101,116,224,1) 100%);
+.login {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(101, 116, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
 }
 
 .login .back-button {
-    margin-top: 30px; 
-    margin-left: 45px; 
-    font-size: 35px;
-    cursor: pointer;
-    color: white;  
+  margin-top: 30px;
+  margin-left: 45px;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
 }
 
-.login .title{
-    color: white;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 15rem;
+.login .title {
+  color: white;
+  font-weight: 800;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  margin-bottom: 10rem;
 }
 
-.login .choice{
-  padding: 10px 20px;
+.login .title p {
+  color: white;
+  font-weight: 200;
+  margin-left: auto;
+}
+
+.login .choice {
+  padding: 15px 20px;
   border: none;
-  border-radius: 20px; 
-  background-color: rgba(25, 4, 130); 
-  color: #fff; 
-  font-size: 16px; 
+  border-radius: 20px;
+  background-color: rgba(25, 4, 130);
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-decoration: none; 
+  text-decoration: none;
   margin-top: 2rem;
   margin-left: 15rem;
   margin-right: 15rem;
@@ -136,120 +151,128 @@
 }
 
 .login .choice:hover {
-  background-color: #6574E0; /* Warna latar belakang saat dihover */
+  background-color: #6574e0; /* Warna latar belakang saat dihover */
 }
 
-.login .choice i{
-    margin-left: 20px;
-    font-size: 40px;
-    color: black;
+.login .choice i {
+  margin-left: 20px;
+  font-size: 40px;
+  color: black;
+}
+
+.login .help-center {
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
 }
 
 /* End Login Page */
 
-
 /* Login User Page */
-.userlogin{
-    position: absolute;
-    width: 100%;
-    height: 105vh;
-    background: rgb(101,116,224);
-    background: linear-gradient(0deg, rgba(101,116,224,0.41) 0%, rgba(101,116,224,1) 100%);
+.userlogin {
+  position: absolute;
+  width: 100%;
+  height: 105vh;
+  background: rgb(101, 116, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
 }
 
 .userlogin .back-button {
-    margin-top: 30px; 
-    margin-left: 45px; 
-    font-size: 35px;
-    cursor: pointer;
-    color: white;  
+  margin-top: 30px;
+  margin-left: 45px;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
 }
 
-.userlogin .title{
-    color: white;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-left: 15rem;
+.userlogin .title {
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 15rem;
 }
 
-.userlogin .choice{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px; 
-    background-color: white; 
-    color: black; 
-    font-size: 16px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; 
-    margin-top: 2rem;
-    margin-left: 15rem;
-    margin-right: 15rem;
-    display: flex;
+.userlogin .choice {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  display: flex;
 }
 
 .userlogin .choice:hover {
-  background-color: #6574E0; /* Warna latar belakang saat dihover */
+  background-color: #6574e0; /* Warna latar belakang saat dihover */
 }
 
-.userlogin .choice img{
-    margin-left: 5px;
-    height: 40px;
+.userlogin .choice img {
+  margin-left: 5px;
+  height: 40px;
 }
 
-.userlogin Form{ 
-    margin-top: 1rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    font-size: 10px; 
+.userlogin Form {
+  margin-top: 1rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  font-size: 10px;
 }
 
-.userlogin .form-control{
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 17px;
-    
+.userlogin .form-control {
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 17px;
 }
 
-.userlogin .form-label{
-    font-weight: bold;
-    font-size: 15px;
-    color: white;
+.userlogin .form-label {
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
 }
 
 .userlogin Button {
-    border-radius: 20px;
-    margin-top: 16px;
-    width: 45rem ;
-    padding: 10px;
-    background-color: #6574E0;
+  border-radius: 20px;
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+
+  background-color: #6574e0;
 }
 
-.userlogin hr{
-    color: white;
-    margin-top: 20px;
+.userlogin hr {
+  color: white;
+  margin-top: 20px;
 }
 
-.userlogin .info{
-    margin-top: 10px;
-    color: white;
-    margin-left: 30rem;
-    margin-right: 30rem;
+.userlogin .info {
+  margin-top: 10px;
+  color: white;
+  margin-left: 30rem;
+  margin-right: 30rem;
+  text-align: center;
 }
 
 /* End Login USer Page */
 
-
 /* Footer */
-.footer{
-    background-color: red !important;
+.footer {
+  background-color: #6574e0 !important;
 }
-.footer-kost{
-    font-weight: 600;
-    color: white;
+.footer-kost {
+  font-weight: 600;
+  color: white;
 }
-.copyright{
-    color: white;
+.copyright {
+  color: white;
 }
 /* End Footer */
-

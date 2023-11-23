@@ -22,6 +22,15 @@ const Login = () => {
         <i className="fa-solid fa-house"></i>
         <h1 className="mx-auto">Pemilik Kos</h1>
       </div>
+
+      <div className="help-center">
+        <p>
+          Butuh Bantuan?
+          <a href="">
+            <span> Klik di Sini</span>
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
