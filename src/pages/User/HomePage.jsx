@@ -1,7 +1,10 @@
+import NavbarComponent from "../../components/NavbarComponent";
+import FooterComponent from "../../components/FooterComponent";
 
 const HomePage = () => {
   return (
     <div>
+      <NavbarComponent /> 
 
       {/* Header */}
       <div className="headerpage">
@@ -103,7 +106,7 @@ const HomePage = () => {
         </div>
       </div>
 
-
+      <FooterComponent />
     </div>
   );
 };
