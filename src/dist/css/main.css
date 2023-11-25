@@ -12,11 +12,13 @@
 
 /* Navbar */
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
 }
 .navbar {
-  padding: 1px 0 1px 0;
+  top: -5px;
+  margin-bottom: -15px;
+  padding: 1px;
   background-color: white !important;
 }
 .navbar .nav-link {
@@ -32,13 +34,20 @@
   margin-top: 10px;
   width: 100%;
   height: 100vh;
-  background: rgb(71, 15, 231);
+  background-image: url('../../assets/img/hero-sec.png');
+  background-size: cover;
+  /* background: rgb(71, 15, 231);
   background: linear-gradient(
     60deg,
     rgba(71, 15, 231, 1) 0%,
     rgba(16, 93, 209, 0.6) 64%,
     rgba(9, 17, 206, 0.67) 100%
-  );
+  ); */
+}
+.hero{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .header-tittle {
   color: white;
@@ -55,21 +64,20 @@
 }
 .search-bar {
   display: flex;
-  padding: 10px 0;
 }
 .search-bar input {
-  padding: 13px;
+  padding-left: 15px;
   width: 30%;
   border-radius: 20px;
 }
 .search-bar button {
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 22px;
   width: 10%;
   border-radius: 20px;
   background-color: rgba(25, 4, 130, 1);
   color: white;
-  padding: 10px;
+  padding: 5px;
 }
 /* End Header */
 

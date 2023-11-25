@@ -1,6 +1,9 @@
 import NavbarComponent from "../../components/NavbarComponent";
 import FooterComponent from "../../components/FooterComponent";
-import {Container} from "react-bootstrap";
+
+import { Container } from "react-bootstrap";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 const HomePage = () => {
   return (
@@ -8,11 +11,11 @@ const HomePage = () => {
       <NavbarComponent /> 
 
       {/* Header */}
-      <div className="headerpage ">
+      <div className="headerpage">
         <Container>
           <div className="header-tittle">
-            <h1>Ingin Mencari kost diarea Jabodetabek?</h1>
-            <h2>Booking Di <span>Kostku</span> aja</h2>
+            <h1>Ingin Mencari kost di area Jabodetabek?</h1>
+            <h2>Booking Di <span>Kostku</span> aja.</h2>
           </div>
 
           <div className="search-bar">
@@ -41,71 +44,53 @@ const HomePage = () => {
 
           <div className="section-card">
 
-            <div className="card">
-              <div className="card-img">
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Kost Ibu Peri</Card.Title>
+                <Button variant="secondary" size="sm" disabled className="mt-1 mb-2">Putri</Button>
+                <Card.Text className="card-spec">
+                  Spesifikasi: <br></br>
+                  Kamar Mandi Dalam - Kasur - Wifi - AC
+                </Card.Text>
+                <Card.Text className="card-loc">
+                  Jakarta Utara
+                </Card.Text>
+                <Button className="button">Cek</Button>
+              </Card.Body>
+            </Card>
 
-              </div>
-              
-              <div className="card-info">
-                <h2>Kost Ibu Peri</h2>
-                <p>Putri</p>
-                <p>Spesifikasi</p>
-                <p>Kamar Mandi Dalam - Kasur - Wifi - AC</p>
-                <p>Jakarta Utara</p>
-              </div>
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Kost Ibu Peri</Card.Title>
+                <Button variant="secondary" size="sm" disabled className="mt-1 mb-2">Putri</Button>
+                <Card.Text className="card-spec">
+                  Spesifikasi: <br></br>
+                  Kamar Mandi Dalam - Kasur - Wifi - AC
+                </Card.Text>
+                <Card.Text className="card-loc">
+                  Jakarta Utara
+                </Card.Text>
+                <Button className="button">Cek</Button>
+              </Card.Body>
+            </Card>
 
-              <div className="card-price">
-                <div className="price-info">
-                  <p>Harga Sewa</p>
-                  <p>Rp.1.200.000/Bulan</p>
-                </div>
-                <button>Cek</button>
-              </div>
-            </div>
-            
-            <div className="card">
-              <div className="card-img">
-
-              </div>
-              
-              <div className="card-info">
-                <h2>Kost Ibu Peri</h2>
-                <p>Putri</p>
-                <p>Spesifikasi</p>
-                <p>Kamar Mandi Dalam - Kasur - Wifi - AC</p>
-                <p>Jakarta Utara</p>
-              </div>
-
-              <div className="card-price">
-                <div className="price-info">
-                  <p>Harga Sewa</p>
-                  <p>Rp.1.200.000/Bulan</p>
-                </div>
-                <button>Cek</button>
-              </div>
-            </div>
-
-            <div className="card">
-              <div className="card-img">
-
-              </div>
-              
-              <div className="card-info">
-                <h2>Kost Ibu Peri</h2>
-                <p>Putri</p>
-                <p>Spesifikasi</p>
-                <p>Kamar Mandi Dalam - Kasur - Wifi - AC</p>
-                <p>Jakarta Utara</p>
-              </div>
-
-              <div className="card-price">
-                <div className="price-info">
-                  <p>Harga Sewa</p>
-                  <p>Rp.1.200.000/Bulan</p>
-                </div>
-                <button>Cek</button>
-              </div>
-            </div>
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Body>
+                <Card.Title>Kost Ibu Peri</Card.Title>
+                <Button variant="secondary" size="sm" disabled className="mt-1 mb-2">Putri</Button>
+                <Card.Text className="card-spec">
+                  Spesifikasi: <br></br>
+                  Kamar Mandi Dalam - Kasur - Wifi - AC
+                </Card.Text>
+                <Card.Text className="card-loc">
+                  Jakarta Utara
+                </Card.Text>
+                <Button className="button">Cek</Button>
+              </Card.Body>
+            </Card>
             
           </div>
         </Container>

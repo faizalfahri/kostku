@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap"
 import logo from './../assets/img/kostku-hitam.png'
+import { Link } from "react-router-dom"
 
 const NavbarComponent = () => {
   return <div>
@@ -19,7 +20,7 @@ const NavbarComponent = () => {
           <Nav className="ms-auto">
             <Nav.Link href="#kost" className="nav-link">Cari Kost</Nav.Link>
             <Nav.Link href="#tentang" className="nav-link">Tentang Kami</Nav.Link>
-            <Button className="ms-3 button">Masuk</Button>
+            <Link to="/login" className="ms-3 button btn text-light">Masuk</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
