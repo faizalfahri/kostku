@@ -1,70 +1,39 @@
-import { Form, Button } from "react-bootstrap";
+import { Form, Col, Row, Container, Button} from "react-bootstrap";
 
 const UserLogin = () => {
   return (
-    <div className="userlogin">
-      <div className="back-button">
-        <i
-          className="fa-solid fa-arrow-left"
-          onClick={() => window.history.back()}
-        ></i>
-      </div>
-
-      <div className="title">
-        <h1>Masuk Pencari Kos</h1>
-      </div>
-
-      <div className="choice d-flex justify-content-center">
-        <img
-          src="../src/assets/img/google.png"
-          alt="Sebuah gambar kucing yang lucu"
-        />
-        <h2>Masuk dengan Google </h2>
-      </div>
-
-      <div className="choice d-flex justify-content-center">
-        <img
-          src="../src/assets/img/facebook.png"
-          alt="Sebuah gambar kucing yang lucu"
-        />
-        <h2>Masuk dengan Facebook</h2>
-      </div>
-
-      <hr />
-
-      <Form action="/submit" method="post">
-        <Form.Group controlId="phoneNumber" className="mb-1">
-          <Form.Label className="form-label">Nomor Telepon:</Form.Label>
-          <Form.Control
-            type="tel"
-            placeholder="Masukkan nomor telepon"
-            className="from-control"
-            required
-          />
-        </Form.Group>
-
-        <Form.Group controlId="password">
-          <Form.Label>Password:</Form.Label>
-          <Form.Control
-            type="password"
-            placeholder="Masukkan password"
-            className="from-control"
-            required
-          />
-        </Form.Group>
-
-        <Button type="submit">Login</Button>
-      </Form>
-
-      <div className="info">
-        <p>
-          Belum punya akun?{" "}
-          <a href="">
-            <span>Daftar Sekarang</span>
-          </a>
-        </p>
-        <a href="">Lupa Password</a>
-      </div>
+    <div className="user-login">
+      <Container fluid>
+        <Row>
+          <Col lg="5"className=" d-flex flex-column justify-content-center align-items-center bg-white colum">
+            <div className="title">
+                <h2>Login Pencari Kos</h2>
+                <p>Ayo cari kos-mu sekarang!</p>
+                <img src="../public/kostku-hitam.png" alt="logo" />
+            </div>
+            <Form>
+              <Form.Group className="mb-3" controlId="formGroupEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formGroupPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
+              </Form.Group>
+            </Form>
+            <div className="link">
+            <a href="" className='text-decoration-none my-2'>Forgot Password?</a>
+            </div>
+            <Button variant="primary">login</Button>
+            <div className='d-flex justify-content-center mt-2 info'>
+                <p>Belum punya akun Kostku? <a href="" className='text-decoration-none '>Daftar Sekarang</a></p>
+            </div>
+          </Col>
+          <Col className='d-flex flex-column justify-content-center align-items-center'>
+                <img src="../src/assets/img/login/1.svg" alt="logo" className='img-wrapper ' />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -4,6 +4,9 @@ import KostPage from "./pages/User/KostPage";
 import DetailKostPage from "./pages/User/DetailKostPage";
 import Login from "./pages/Login";
 import UserLogin from "./pages/User/UserLogin";
+import ForgotPassword from "./pages/User/ForgotPassword";
+import NewPassword from "./pages/User/NewPassword";
+import OtpPage from "./pages/User/OtpPage";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
         <Route path="/detailkost" Component={DetailKostPage} />
         <Route path="/login" Component={Login} />
         <Route path="/userlogin" Component={UserLogin} />
+        <Route path="/forgotpassword" Component={ForgotPassword} />
+        <Route path="/newpassword" Component={NewPassword} />
+        <Route path="/otp" Component={OtpPage} />
       </Routes>
     </div>
   );
