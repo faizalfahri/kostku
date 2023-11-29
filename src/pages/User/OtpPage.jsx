@@ -21,8 +21,6 @@ const OtpPage = () => {
                     numInputs={4}
                     renderSeparator={<span>-</span>}
                     renderInput={(props) => <input {...props} />}
-                    Type="number"
-                    inputMode="numeric"
                     />
                         </Form>
                         <Button variant="primary">Kirim</Button>
