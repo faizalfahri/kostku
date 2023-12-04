@@ -1,6 +1,8 @@
 import NavbarComponent from "../../components/NavbarComponent";
 import FooterComponent from "../../components/FooterComponent";
 
+import { Carousel } from "react-bootstrap"
+
 const DetailKostPage = () => {
   return (
     <div>

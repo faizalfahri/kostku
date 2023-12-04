@@ -26,7 +26,6 @@ import imgsihir from "../../assets/img/KostNenekSihir.jpeg";
 import about_asset from "../../assets/img/Saly-31.png";
 
 import testimoni_list from "../../utils/data-testimoni";
-import kost_list from "../../utils/data-testimoni";
 
 const HomePage = () => {
   useEffect(() => {
@@ -70,7 +69,7 @@ const HomePage = () => {
       <div className="section-kost">
         <Container>
           <div className="section-title">
-            <h1>Daftar Kost</h1>
+            <h2>Daftar Kost</h2>
             <div className="line"></div>
           </div>
 
@@ -186,7 +185,7 @@ const HomePage = () => {
       >
         <Row>
           <div className="text-light me-5 mb-5">
-            <h1>Testimoni</h1>
+            <h2>Testimoni</h2>
             <div className="line bg-light"></div>
           </div>
           <Swiper
@@ -226,26 +225,25 @@ const HomePage = () => {
 
       {/* ABOUT */}
       <section
-        className="tentang d-flex flex-column align-items-center justify-content-center bg-light"
+        className="tentang d-flex flex-column align-items-center justify-content-center"
         id="tentangkami"
       >
         <Container>
           <Row>
             <Col lg="6">
               <div className="mt-5 mb-5">
-                <h1>Tentang Kami</h1>
+                <h2>Tentang Kami</h2>
                 <div className="line"></div>
               </div>
               <div className="about-card">
                 <Card
                   border="secondary"
-                  style={{ width: "25rem" }}
-                  className="mt-4 mb-3 text-light shadow-lg"
+                  style={{ width: "27rem" }}
+                  className="mb-5 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="500"
                 >
-                  <Card.Header>#1</Card.Header>
                   <Card.Body>
                     <Card.Title>Tujuan</Card.Title>
                     <Card.Text>
@@ -258,12 +256,11 @@ const HomePage = () => {
                 </Card>
                 <Card
                   style={{ width: "25rem" }}
-                  className="mb-3 text-light shadow-lg"
+                  className="mb-5 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="1000"
                 >
-                  <Card.Header>#2</Card.Header>
                   <Card.Body>
                     <Card.Title>Capaian</Card.Title>
                     <Card.Text>
@@ -274,13 +271,12 @@ const HomePage = () => {
                   </Card.Body>
                 </Card>
                 <Card
-                  style={{ width: "25rem" }}
-                  className="text-light shadow-lg"
+                  style={{ width: "27rem" }}
+                  className="text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
                 >
-                  <Card.Header>#3</Card.Header>
                   <Card.Body>
                     <Card.Title>Founder </Card.Title>
                     <Card.Text>
