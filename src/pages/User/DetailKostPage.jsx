@@ -2,13 +2,15 @@ import NavbarComponent from "../../components/NavbarComponent";
 import FooterComponent from "../../components/FooterComponent";
 
 const DetailKostPage = () => {
-  return <div>
-    <NavbarComponent />
-    
-    Detail Kost Page
+  return (
+    <div>
+      <NavbarComponent />
 
-    <FooterComponent />
-  </div>;
+      <section className="detail_kost">Detail Kost Page</section>
+
+      <FooterComponent />
+    </div>
+  );
 };
 
 export default DetailKostPage;

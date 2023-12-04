@@ -23,15 +23,14 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import imgperi from "../../assets/img/KostIbuPeri.jpg";
 import imgbarbie from "../../assets/img/KostIbuBarbie.png";
 import imgsihir from "../../assets/img/KostNenekSihir.jpeg";
-import testi1 from "../../assets/img/testi1.jpeg";
-import testi2 from "../../assets/img/testi2.jpg";
-import testi3 from "../../assets/img/testi3.jpg";
 import about_asset from "../../assets/img/Saly-31.png";
+
+import testimoni_list from "../../utils/data-testimoni";
 
 const HomePage = () => {
   useEffect(() => {
     AOS.init({
-      once: true,
+      once: false,
     });
   }, []);
 
@@ -143,7 +142,7 @@ const HomePage = () => {
               style={{ width: "25rem" }}
               className="shadow-lg"
               data-aos="flip-left"
-              data-aos-duration="1000"
+              data-aos-duration="500"
             >
               <Card.Img variant="top" src={imgsihir} />
               <Card.Body>
@@ -201,70 +200,23 @@ const HomePage = () => {
             className="mySwiper section-testimonial py-5 px-5 bg-light rounded-5"
           >
             <div className="testi-content">
-              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-                <img
-                  src={testi1}
-                  alt="testimoni orang pertama"
-                  className="img-testi"
-                />
-                <p className="text-center pt-4">
-                  Dengan adanya web ini memudahkan saya untuk mempromosikan
-                  bisnis kost-kostan saya lebih mudah sehingga memperbesar
-                  peluang saya untuk mencapai target saya.
-                </p>
-                <FontAwesomeIcon
-                  icon={faQuoteLeft}
-                  className="quote-icon pb-3"
-                />
-                <div className="details d-flex flex-column align-items-center">
-                  <span className="name">Ibu Peri</span>
-                  <span className="job"> Pemilik Kost Ibu Peri</span>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-                <img
-                  src={testi2}
-                  alt="testimoni orang kedua"
-                  className="img-testi"
-                />
-                <p className="text-center pt-4">
-                  Aplikasinya memudahkan saya cepat mendapat kost melalui
-                  informasi yang mendetail, pemilik kostnya pun ramah, fast
-                  respond dan fasilitasnya lengkap.
-                </p>
-                <FontAwesomeIcon
-                  icon={faQuoteLeft}
-                  className="quote-icon pb-3"
-                />
-                <div className="details d-flex flex-column align-items-center">
-                  <span className="name">Sofiyah</span>
-                  <span className="job">
-                    Mahasiswi - Penghuni Kost Ibu Barbie
-                  </span>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-                <img
-                  src={testi3}
-                  alt="testimoni orang ketiga"
-                  className="img-testi"
-                />
-                <p className="text-center pt-4">
-                  ini memudahkan saya sebagai perantau dalam menemukan kost yang
-                  terpercaya dan terjamin keamanan serta kenyamanannya. Apalagi
-                  dengan harga yang bisa menyesuaikan.
-                </p>
-                <FontAwesomeIcon
-                  icon={faQuoteLeft}
-                  className="quote-icon pb-3"
-                />
-                <div className="details d-flex flex-column align-items-center">
-                  <span className="name">Aqshal</span>
-                  <span className="job">
-                    Mahasiswa - Penghuni Kost Nenek Sihir
-                  </span>
-                </div>
-              </SwiperSlide>
+              {testimoni_list.map((item) => {
+                return (
+                  <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
+                    <img
+                      src={item.image}
+                      alt="testimoni orang pertama"
+                      className="img-testi"
+                    />
+                    <p className="text-center pt-4">{item.message}</p>
+                    <FontAwesomeIcon icon={faQuoteLeft} />
+                    <div className="details d-flex flex-column align-items-center">
+                      <span className="name">{item.name}</span>
+                      <span className="job">{item.job}</span>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
             </div>
           </Swiper>
         </Row>
@@ -364,6 +316,12 @@ const HomePage = () => {
         </svg>
       </section>
       {/* END ABOUT */}
+
+      {/* About Kostku */}
+      <div bg="light">
+
+      </div>
+      {/* End About Kostku */}
 
       <FooterComponent />
     </div>
