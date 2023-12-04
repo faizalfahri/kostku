@@ -7,6 +7,9 @@ import ForgotPassword from "./pages/User/ForgotPassword";
 import NewPassword from "./pages/User/NewPassword";
 import OtpPage from "./pages/User/OtpPage";
 import Register from "./pages/Register";
+import PengajuanPage from "./pages/User/PengajuanPage";
+import Konfirmasi from "./pages/User/Konfirmasi";
+import ChekinPage from "./pages/User/ChekinPage";
 
 function App() {
   return (
@@ -20,6 +23,11 @@ function App() {
         <Route path="/newpassword" Component={NewPassword} />
         <Route path="/otp" Component={OtpPage} />
         <Route path="/register" Component={Register} />
+        <Route path="/pengajuan" Component={PengajuanPage} />
+        <Route path="/konfirmasi" Component={Konfirmasi} />
+        <Route path="/checkin" Component={ChekinPage} />
+
+
       </Routes>
     </div>
   );
