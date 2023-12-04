@@ -12,12 +12,12 @@ export const NewPassword = () => {
                     </div>
                     <Form>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Label>Kata Sandi</Form.Label>
+                        <Form.Control type="kataSandi" placeholder="Kata Sandi" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formGroupPassword">
-                        <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="confirm-password" placeholder=" Confirm Password" />
+                        <Form.Label>Konfirmasi Kata Sandi</Form.Label>
+                        <Form.Control type="konfirmasiSandi" placeholder="Konfirmasi Kata Sandi" />
                     </Form.Group>
                     </Form>
                     <Button variant="primary">Kirim</Button>

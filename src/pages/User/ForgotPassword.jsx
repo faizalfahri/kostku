@@ -14,15 +14,15 @@ const ForgotPassword = () => {
                 </div>
                 <Form>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Label> Alamat Emails</Form.Label>
+                    <Form.Control type="email" placeholder="Masukan Email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
-                    <Form.Label>Repeat Email address</Form.Label>
-                    <Form.Control type="repeat-email" placeholder="Repeat Email address" />
+                    <Form.Label>Ulangi Alamat Email</Form.Label>
+                    <Form.Control type="ulangaEmail" placeholder="Ulangi Alamat Email" />
                 </Form.Group>
                 </Form>
-                <Button variant="primary">Get OTP</Button>
+                <Button variant="primary">Dapatkan OTP</Button>
             </Col>
             <Col className='d-flex flex-column justify-content-center align-items-center'>
                     <img src="../src/assets/img/login/2.svg" alt="logo" className='img-wrapper ' />

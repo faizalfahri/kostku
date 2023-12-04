@@ -1,7 +1,13 @@
+<<<<<<< HEAD
+import { Navbar, Container, Nav,  } from "react-bootstrap"
+import logo from './../assets/img/kostku-hitam.png'
+import { Link } from "react-router-dom"
+=======
 import { useState } from "react";
 import { Navbar, Container, Nav, Button, Modal } from "react-bootstrap";
 import logo from "./../assets/img/kostku-hitam.png";
 import { Link } from "react-router-dom";
+>>>>>>> 21b181ff0b0960cf54d636622365da63b1c78a3e
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(false);

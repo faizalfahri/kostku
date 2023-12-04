@@ -1,5 +1,9 @@
-const SidebarComponent = () => {
-  return <div>Sidebar</div>;
-};
 
-export default SidebarComponent;
+
+const SidebarComponent = () => {
+  return (
+    <div>SidebarComponent</div>
+  )
+}
+
+export default SidebarComponent

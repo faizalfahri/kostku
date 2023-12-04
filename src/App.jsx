@@ -7,6 +7,8 @@ import UserLogin from "./pages/User/UserLogin";
 import ForgotPassword from "./pages/User/ForgotPassword";
 import NewPassword from "./pages/User/NewPassword";
 import OtpPage from "./pages/User/OtpPage";
+import Register from "./pages/Register";
+
 
 function App() {
   return (
@@ -20,7 +22,10 @@ function App() {
         <Route path="/forgotpassword" Component={ForgotPassword} />
         <Route path="/newpassword" Component={NewPassword} />
         <Route path="/otp" Component={OtpPage} />
+        <Route path="/register" Component={Register} />
+
       </Routes>
+      
     </div>
   );
 }
