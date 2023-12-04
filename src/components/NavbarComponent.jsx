@@ -16,11 +16,11 @@ const NavbarComponent = () => {
           <Modal.Title>Saya ingin Masuk Sebagai</Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex justify-content-center">
-          <Link to="/login" className="button btn text-light w-50">
+          <Link to="/userlogin" className="button btn text-light w-50">
             <i className="fa-solid fa-person-walking-arrow-right me-2"></i>
             Pencari Kost
           </Link>
-          <Link to="/login" className="ms-3 button btn text-light w-50">
+          <Link to="/userlogin" className="ms-3 button btn text-light w-50">
             <i className="fa-solid fa-house me-2"></i>
             Pemilik Kost
           </Link>

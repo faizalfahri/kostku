@@ -20,6 +20,9 @@
 .wave {
   background-color: #6574e0 !important;
 }
+.pointer {
+  cursor: pointer;
+}
 
 /* Navbar */
 .logo {
