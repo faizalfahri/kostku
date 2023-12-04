@@ -100,7 +100,7 @@
   padding: 60px 0 20px 0;
 }
 .card {
-  margin: 0 20px 0 20px;
+  margin: -30px 20px 0 20px;
 }
 .card-img-top {
   width: 100%;
@@ -176,74 +176,7 @@
 
 /* End Home Page */
 
-/* Login Page */
-.login {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: rgb(101, 116, 224);
-  background: linear-gradient(
-    0deg,
-    rgba(101, 116, 224, 0.41) 0%,
-    rgba(101, 116, 224, 1) 100%
-  );
-}
-
-.login .back-button {
-  margin-top: 30px;
-  margin-left: 45px;
-  font-size: 35px;
-  cursor: pointer;
-  color: white;
-}
-
-.login .title {
-  color: white;
-  font-weight: 800;
-  margin-top: 1rem;
-  margin-left: 15rem;
-  margin-bottom: 10rem;
-}
-
-.login .title p {
-  color: white;
-  font-weight: 200;
-  margin-left: auto;
-}
-
-.login .choice {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: rgba(25, 4, 130);
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  display: flex;
-}
-
-.login .choice:hover {
-  background-color: #6574e0; /* Warna latar belakang saat dihover */
-}
-
-.login .choice i {
-  margin-left: 20px;
-  font-size: 40px;
-  color: black;
-}
-
-.login .help-center {
-  text-align: center;
-  color: white;
-  margin-top: 3rem;
-}
-
-/* End Login Page */
+/* ================================================================================================ */
 
 /* Login User Page */
 .user-login {
@@ -259,8 +192,7 @@
 
 .user-login .row .colum {
   height: 100vh;
-  background-color:  #f5f8ff;
-  
+  background-color: #f5f8ff;
 }
 
 .user-login .title img {
@@ -283,7 +215,7 @@
   padding-left: 125px;
   padding-right: 125px;
   background-color: rgba(25, 4, 130, 1);
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
@@ -329,71 +261,67 @@
 
 .register .row .colum {
   height: 100vh;
-  background-color:  #f5f8ff;
-  
+  background-color: #f5f8ff;
 }
 
-.register .title img{
-width:30%;
+.register .title img {
+  width: 30%;
 }
-
 
 .register .form-control {
   width: 300px;
 }
 
-.register .title{
+.register .title {
   justify-content: center;
   text-align: center;
   margin-top: 50px;
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
-.register button{
+.register button {
   padding-left: 110px;
   padding-right: 110px;
   background-color: rgba(25, 4, 130, 1);
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
-  
 }
 
 .register .link {
   margin-left: 180px;
-  margin-bottom:12px;
-  font-size:13px;
-  animation-name:bounceIn;
-  animation-duration: 1s;
-  
-}
-
-.register .info{
+  margin-bottom: 12px;
   font-size: 13px;
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
-.register .img-wrapper{
+.register .info {
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.register .img-wrapper {
   width: 60%;
-  margin-top:20px;
-  animation-name:zoomIn;
+  margin-top: 20px;
+  animation-name: zoomIn;
   animation-duration: 2s;
 }
 
-.register form{
-  animation-name:bounceIn;
+.register form {
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 /* End Register Page */
-
 
 /* Forgot Password Page */
 .forgot-password {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient( 0deg,
+  background: linear-gradient(
+    0deg,
     rgba(101, 116, 224, 0.41) 0%,
     rgba(101, 116, 224, 1) 100%
   );
@@ -401,8 +329,7 @@ width:30%;
 
 .forgot-password .row .colum {
   height: 100vh;
-  background-color:  #f5f8ff;
-  
+  background-color: #f5f8ff;
 }
 
 .forgot-password .title img {
@@ -427,7 +354,6 @@ width:30%;
   padding-left: 120px;
   padding-right: 120px;
   background-color: rgba(25, 4, 130, 1);
-
 }
 
 .forgot-password .img-wrapper {
@@ -442,7 +368,8 @@ width:30%;
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient( 0deg,
+  background: linear-gradient(
+    0deg,
     rgba(101, 116, 224, 0.41) 0%,
     rgba(101, 116, 224, 1) 100%
   );
@@ -450,8 +377,7 @@ width:30%;
 
 .new-password .row .colum {
   height: 100vh;
-  background-color:  #f5f8ff;
-  
+  background-color: #f5f8ff;
 }
 
 .new-password .title img {
@@ -474,9 +400,8 @@ width:30%;
 
 .new-password button {
   padding-left: 120px;
-  padding-right: 120px; 
+  padding-right: 120px;
   background-color: rgba(25, 4, 130, 1);
-
 }
 
 .new-password .img-wrapper {
@@ -490,7 +415,8 @@ width:30%;
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: linear-gradient( 0deg,
+  background: linear-gradient(
+    0deg,
     rgba(101, 116, 224, 0.41) 0%,
     rgba(101, 116, 224, 1) 100%
   );
@@ -498,8 +424,7 @@ width:30%;
 
 .otp .row .colum {
   height: 100vh;
-  background-color:  #f5f8ff;
-  
+  background-color: #f5f8ff;
 }
 
 .otp .title img {
@@ -554,13 +479,9 @@ width:30%;
 }
 /* End OTP Page */
 
-
-
-
 /* Footer */
 .footer {
   background-color: #6574e0 !important;
-  margin-top: -120px;
 }
 .footer-logo {
   width: 20%;

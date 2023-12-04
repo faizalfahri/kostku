@@ -1,12 +1,13 @@
 import { Form, Col, Row, Container, Button } from "react-bootstrap";
 import BackButtonComponent from "../../components/BackButtonComponent";
+import { Link } from "react-router-dom";
 
 const UserLogin = () => {
   return (
     <div className="user-login">
       <Container fluid>
         <Row>
-          <Col lg="5" className="bg-white colum py-5 px-5">
+          <Col lg="5" className="colum py-5 px-5">
             <BackButtonComponent />
             <div className="d-flex flex-column justify-content-center align-items-center">
               <div className="title">
@@ -17,25 +18,28 @@ const UserLogin = () => {
               <Form>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control type="email" placeholder="Masukkan Email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
+                  <Form.Label>Kata Sandi</Form.Label>
+                  <Form.Control
+                    type="password"
+                    placeholder="Masukkan Kata Sandi"
+                  />
                 </Form.Group>
               </Form>
               <div className="link">
                 <a href="" className="text-decoration-none my-2">
-                  Forgot Password?
+                  Lupa Password?
                 </a>
               </div>
-              <Button variant="primary">login</Button>
-              <div className="d-flex justify-content-center mt-2 info">
+              <Button variant="primary">Masuk</Button>
+              <div className="d-flex flex-column justify-content-center align-items-center mt-2 info">
                 <p>
                   Belum punya akun Kostku?{" "}
-                  <a href="" className="text-decoration-none ">
+                  <Link to="/register" className="text-decoration-none">
                     Daftar Sekarang
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

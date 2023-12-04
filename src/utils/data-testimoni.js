@@ -25,4 +25,5 @@ let testimoni_list = [
     image: testi3,
   },
 ];
+
 export default testimoni_list;
