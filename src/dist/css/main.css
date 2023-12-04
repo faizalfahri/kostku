@@ -9,6 +9,17 @@
   background-color: #190482 !important;
   outline: none !important;
 }
+.gradient {
+  background: linear-gradient(
+    60deg,
+    rgba(9, 17, 206, 0.67) 100%,
+    rgba(16, 93, 209, 0.6) 64%,
+    rgba(71, 15, 231, 1) 0%
+  );
+}
+.wave {
+  background-color: #6574e0 !important;
+}
 
 /* Navbar */
 .logo {
@@ -35,13 +46,6 @@
   height: 100vh;
   background-image: url("../../assets/img/hero-sec.png");
   background-size: cover;
-  /* background: rgb(71, 15, 231);
-  background: linear-gradient(
-    60deg,
-    rgba(71, 15, 231, 1) 0%,
-    rgba(16, 93, 209, 0.6) 64%,
-    rgba(9, 17, 206, 0.67) 100%
-  ); */
 }
 .hero {
   object-fit: cover;
@@ -106,7 +110,10 @@
 
 /* Testimonial */
 .testi-container {
-  background-color: #5064e8;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/hero-sec.png");
+  background-size: cover;
 }
 .section-testimonial {
   position: relative;
@@ -136,6 +143,33 @@
   font-weight: 600;
 }
 /* End Testimonial */
+
+/* About */
+.logo-about {
+  width: 75vh;
+  height: 75vh;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+.tentang .about-card .card {
+  background: linear-gradient(
+    60deg,
+    rgba(9, 17, 206, 0.67) 100%,
+    rgba(16, 93, 209, 0.6) 64%,
+    rgba(71, 15, 231, 1) 0%
+  );
+}
+.tentang .about-card .card:nth-child(1) {
+  margin-left: -10px;
+}
+.tentang .about-card .card:nth-child(2) {
+  margin-left: 135px;
+}
+.tentang .about-card .card:nth-child(3) {
+  margin-left: 270px;
+  margin-bottom: -50px;
+}
+/* End About */
 
 /* End Home Page */
 
@@ -226,56 +260,53 @@
   
 }
 
-.user-login .title img{
-width:30%;
+.user-login .title img {
+  width: 30%;
 }
-
 
 .user-login .form-control {
   width: 300px;
 }
 
-.user-login .title{
+.user-login .title {
   justify-content: center;
   text-align: center;
   margin-top: 50px;
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
-.user-login button{
+.user-login button {
   padding-left: 125px;
   padding-right: 125px;
   background-color: rgba(25, 4, 130, 1);
   animation-name:bounceIn;
   animation-duration: 1s;
-  
 }
 
 .user-login .link {
   margin-left: 180px;
-  margin-bottom:12px;
-  font-size:13px;
-  animation-name:bounceIn;
-  animation-duration: 1s;
-  
-}
-
-.user-login .info{
+  margin-bottom: 12px;
   font-size: 13px;
-  animation-name:bounceIn;
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
-.user-login .img-wrapper{
+.user-login .info {
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.user-login .img-wrapper {
   width: 60%;
-  margin-top:20px;
-  animation-name:zoomIn;
+  margin-top: 20px;
+  animation-name: zoomIn;
   animation-duration: 2s;
 }
 
-.user-login form{
-  animation-name:bounceIn;
+.user-login form {
+  animation-name: bounceIn;
   animation-duration: 1s;
 }
 
@@ -371,42 +402,40 @@ width:30%;
   
 }
 
-.forgot-password .title img{
-width:30%;
+.forgot-password .title img {
+  width: 30%;
 }
-
 
 .forgot-password .form-control {
   width: 300px;
 }
 
-.forgot-password .title{
+.forgot-password .title {
   justify-content: center;
   text-align: center;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
-.forgot-password .title p{
-  font-size:15px;
-} 
+.forgot-password .title p {
+  font-size: 15px;
+}
 
-.forgot-password button{
+.forgot-password button {
   padding-left: 120px;
   padding-right: 120px;
   background-color: rgba(25, 4, 130, 1);
 
 }
 
-
-.forgot-password .img-wrapper{
+.forgot-password .img-wrapper {
   width: 60%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 /* End Forgot Password Page */
 
 /* NewPassword Page */
-.new-password{
+.new-password {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -422,41 +451,39 @@ width:30%;
   
 }
 
-.new-password .title img{
-width:30%;
+.new-password .title img {
+  width: 30%;
 }
-
 
 .new-password .form-control {
   width: 300px;
 }
 
-.new-password .title{
+.new-password .title {
   justify-content: center;
   text-align: center;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
-.new-password .title p{
-  font-size:15px;
-} 
+.new-password .title p {
+  font-size: 15px;
+}
 
-.new-password button{
+.new-password button {
   padding-left: 120px;
   padding-right: 120px; 
   background-color: rgba(25, 4, 130, 1);
 
 }
 
-
-.new-password .img-wrapper{
+.new-password .img-wrapper {
   width: 60%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 /* Edn NewPassword Page */
 
 /* OTP Page */
-.otp{
+.otp {
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -472,58 +499,55 @@ width:30%;
   
 }
 
-.otp .title img{
-width:50%;
+.otp .title img {
+  width: 50%;
 }
-
 
 .otp .form-control {
   width: 300px;
 }
 
-.otp .title{
+.otp .title {
   justify-content: center;
   text-align: center;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
-.otp .title p{
-  font-size:15px;
-} 
+.otp .title p {
+  font-size: 15px;
+}
 
-.otp button{
+.otp button {
   padding-left: 135px;
-  padding-right: 135px; 
+  padding-right: 135px;
   margin-top: 15px;
   background-color: rgba(25, 4, 130, 1);
 }
 
-.otp form div{
+.otp form div {
   display: flex;
   align-items: center;
 }
 
-.otp form div input{
-    width: 3rem!important;
-    height: 3rem;
-    margin: 0 1rem;
-    font-size: 2rem;
-    border: 1px solid #ced4da; 
-  border-radius: 0.25rem; 
+.otp form div input {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
   padding: 0.375rem 0.75rem;
-    
 }
 
-.otp form div input:focus{
+.otp form div input:focus {
   outline: none;
-  border-color: #80bdff; 
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
-  
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.otp .img-wrapper{
+.otp .img-wrapper {
   width: 60%;
-  margin-top:20px;
+  margin-top: 20px;
 }
 /* End OTP Page */
 
@@ -533,6 +557,10 @@ width:50%;
 /* Footer */
 .footer {
   background-color: #6574e0 !important;
+  margin-top: -120px;
+}
+.footer-logo {
+  width: 20%;
 }
 .footer-kost {
   font-weight: 600;
