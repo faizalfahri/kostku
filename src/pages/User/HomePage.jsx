@@ -156,78 +156,90 @@ const HomePage = () => {
       <Container
         fluid
         className="testi-container vh-100 w-100 d-flex align-items-center justify-content-center"
-      >
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          loop={true}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
-          className="mySwiper section-testimonial py-5 px-5 bg-light rounded-5"
         >
-          <div className="testi-content">
-            <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-              <img
-                src={testi1}
-                alt="testimoni orang pertama"
-                className="img-testi"
-              />
-              <p className="text-center pt-4">
-                Dengan adanya web ini memudahkan saya untuk mempromosikan bisnis
-                kost-kostan saya lebih mudah sehingga memperbesar peluang saya
-                untuk mencapai target saya.
-              </p>
-              <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
-              <div className="details d-flex flex-column align-items-center">
-                <span className="name">Ibu Peri</span>
-                <span className="job"> Pemilik Kost Ibu Peri</span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-              <img
-                src={testi2}
-                alt="testimoni orang kedua"
-                className="img-testi"
-              />
-              <p className="text-center pt-4">
-                Aplikasinya memudahkan saya cepat mendapat kost melalui
-                informasi yang mendetail, pemilik kostnya pun ramah, fast
-                respond dan fasilitasnya lengkap.
-              </p>
-              <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
-              <div className="details d-flex flex-column align-items-center">
-                <span className="name">Sofiyah</span>
-                <span className="job">
-                  Mahasiswi - Penghuni Kost Ibu Barbie
-                </span>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
-              <img
-                src={testi3}
-                alt="testimoni orang ketiga"
-                className="img-testi"
-              />
-              <p className="text-center pt-4">
-                ini memudahkan saya sebagai perantau dalam menemukan kost yang
-                terpercaya dan terjamin keamanan serta kenyamanannya. Apalagi
-                dengan harga yang bisa menyesuaikan.
-              </p>
-              <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
-              <div className="details d-flex flex-column align-items-center">
-                <span className="name">Aqshal</span>
-                <span className="job">
-                  Mahasiswa - Penghuni Kost Nenek Sihir
-                </span>
-              </div>
-            </SwiperSlide>
-          </div>
-        </Swiper>
+          <Row>
+            <div className=" text-light pb-5 pe-5">
+              <h1>Testimoni</h1>
+              <div className="line bg-light"></div>
+            </div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper section-testimonial py-5 px-5 bg-light rounded-5"
+            >
+            <div className="testi-content">
+              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
+                <img
+                  src={testi1}
+                  alt="testimoni orang pertama"
+                  className="img-testi"
+                />
+                <p className="text-center pt-4">
+                  Dengan adanya web ini memudahkan saya untuk mempromosikan bisnis
+                  kost-kostan saya lebih mudah sehingga memperbesar peluang saya
+                  untuk mencapai target saya.
+                </p>
+                <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
+                <div className="details d-flex flex-column align-items-center">
+                  <span className="name">Ibu Peri</span>
+                  <span className="job"> Pemilik Kost Ibu Peri</span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
+                <img
+                  src={testi2}
+                  alt="testimoni orang kedua"
+                  className="img-testi"
+                />
+                <p className="text-center pt-4">
+                  Aplikasinya memudahkan saya cepat mendapat kost melalui
+                  informasi yang mendetail, pemilik kostnya pun ramah, fast
+                  respond dan fasilitasnya lengkap.
+                </p>
+                <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
+                <div className="details d-flex flex-column align-items-center">
+                  <span className="name">Sofiyah</span>
+                  <span className="job">
+                    Mahasiswi - Penghuni Kost Ibu Barbie
+                  </span>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="d-flex justify-content-center align-items-center flex-column px-5">
+                <img
+                  src={testi3}
+                  alt="testimoni orang ketiga"
+                  className="img-testi"
+                />
+                <p className="text-center pt-4">
+                  ini memudahkan saya sebagai perantau dalam menemukan kost yang
+                  terpercaya dan terjamin keamanan serta kenyamanannya. Apalagi
+                  dengan harga yang bisa menyesuaikan.
+                </p>
+                <FontAwesomeIcon icon={faQuoteLeft} className="quote-icon pb-3" />
+                <div className="details d-flex flex-column align-items-center">
+                  <span className="name">Aqshal</span>
+                  <span className="job">
+                    Mahasiswa - Penghuni Kost Nenek Sihir
+                  </span>
+                </div>
+              </SwiperSlide>
+            </div>
+          </Swiper>
+          </Row>
       </Container>
       {/* End Testimonial */}
+
+      {/* About Kostku */}
+      <div bg="light">
+
+      </div>
+      {/* End About Kostku */}
 
       <FooterComponent />
     </div>
