@@ -69,7 +69,7 @@ const HomePage = () => {
       <div className="section-kost">
         <Container>
           <div className="section-title">
-            <h1>Daftar Kost</h1>
+            <h2>Daftar Kost</h2>
             <div className="line"></div>
           </div>
 
@@ -185,7 +185,7 @@ const HomePage = () => {
       >
         <Row>
           <div className="text-light me-5 mb-5">
-            <h1>Testimoni</h1>
+            <h2>Testimoni</h2>
             <div className="line bg-light"></div>
           </div>
           <Swiper
@@ -232,7 +232,7 @@ const HomePage = () => {
           <Row>
             <Col lg="6">
               <div className="mt-5 mb-5">
-                <h1>Tentang Kami</h1>
+                <h2>Tentang Kami</h2>
                 <div className="line"></div>
               </div>
               <div className="about-card">
