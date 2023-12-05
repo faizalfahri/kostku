@@ -2,6 +2,7 @@ import { Form, Col, Row, Container, Button} from "react-bootstrap";
 import  { useState } from 'react';
 import OtpInput from 'react-otp-input';
 import BackButtonComponent from "../../components/BackButtonComponent";
+import {Link} from "react-router-dom"
 
 const OtpPage = () => {
     const [otp, setOtp] = useState('');
@@ -26,7 +27,9 @@ const OtpPage = () => {
                                     renderInput={(props) => <input {...props} />}
                                 />
                             </Form>
-                            <Button variant="primary">Kirim</Button>
+                            <Link to="/userlogin">
+                                <Button variant="primary">Kirim</Button>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='d-flex flex-column justify-content-center align-items-center'>

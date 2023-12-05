@@ -29,9 +29,9 @@ const UserLogin = () => {
                 </Form.Group>
               </Form>
               <div className="link">
-                <a href="" className="text-decoration-none my-2">
+                <Link to="/forgotpassword" className="text-decoration-none my-2">
                   Lupa Password?
-                </a>
+                </Link>
               </div>
               <Button variant="primary">Masuk</Button>
               <div className="d-flex flex-column justify-content-center align-items-center mt-2 info">

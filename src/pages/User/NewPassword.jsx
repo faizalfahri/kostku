@@ -1,4 +1,6 @@
 import { Form, Col, Row, Container, Button} from "react-bootstrap";
+import {Link} from "react-router-dom"
+
 export const NewPassword = () => {
     return (
     <div className="new-password">
@@ -20,7 +22,9 @@ export const NewPassword = () => {
                         <Form.Control type="konfirmasiSandi" placeholder="Konfirmasi Kata Sandi" />
                     </Form.Group>
                     </Form>
-                    <Button variant="primary">Kirim</Button>
+                    <Link to="/userlogin">
+                        <Button variant="primary">Perbarui</Button>
+                    </Link>
                 </Col>
                 <Col className='d-flex flex-column justify-content-center align-items-center'>
                         <img src="../src/assets/img/login/4.svg" alt="logo" className='img-wrapper ' />

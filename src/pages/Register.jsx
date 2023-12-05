@@ -32,7 +32,9 @@ const Register = () => {
                   />
                 </Form.Group>
               </Form>
-              <Button variant="primary">Buat Akun</Button>
+              <Link to="/otp">
+                <Button variant="primary">Buat Akun</Button>
+              </Link>
               <div className="d-flex justify-content-center mt-2 info">
                 <p>
                   Kamu punya akun?{" "}
