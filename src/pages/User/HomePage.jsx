@@ -239,12 +239,11 @@ const HomePage = () => {
                 <Card
                   border="secondary"
                   style={{ width: "25rem" }}
-                  className="mt-4 mb-3 text-light shadow-lg"
+                  className="mt-4 mb-3 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="500"
                 >
-                  <Card.Header>#1</Card.Header>
                   <Card.Body>
                     <Card.Title>Tujuan</Card.Title>
                     <Card.Text>
@@ -257,12 +256,11 @@ const HomePage = () => {
                 </Card>
                 <Card
                   style={{ width: "25rem" }}
-                  className="mb-3 text-light shadow-lg"
+                  className="mb-3 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="1000"
                 >
-                  <Card.Header>#2</Card.Header>
                   <Card.Body>
                     <Card.Title>Capaian</Card.Title>
                     <Card.Text>
@@ -274,12 +272,11 @@ const HomePage = () => {
                 </Card>
                 <Card
                   style={{ width: "25rem" }}
-                  className="text-light shadow-lg"
+                  className="text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="1500"
                 >
-                  <Card.Header>#3</Card.Header>
                   <Card.Body>
                     <Card.Title>Founder </Card.Title>
                     <Card.Text>
