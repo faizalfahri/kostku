@@ -9,76 +9,102 @@
   background-color: #190482 !important;
   outline: none !important;
 }
+.gradient {
+  background: linear-gradient(
+    60deg,
+    rgba(9, 17, 206, 0.67) 100%,
+    rgba(16, 93, 209, 0.6) 64%,
+    rgba(71, 15, 231, 1) 0%
+  );
+}
+.wave {
+  background-color: #6574e0 !important;
+}
+.pointer {
+  cursor: pointer;
+}
 
 /* Navbar */
 .logo {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
 }
 .navbar {
-  padding: 1px 0 1px 0;
+  top: -5px;
+  margin-bottom: -15px;
+  padding: 1px;
   background-color: white !important;
 }
 .navbar .nav-link {
   color: black;
   font-weight: 500;
+  
+}
+
+.custom-nav{
+  top: -5px;
+  margin-bottom: -15px;
+  background-color: rgba(4, 34, 224, 0.7)!important;
+  height: 75px;
+}
+
+.custom-nav .nav-link {
+  color: rgb(250, 241, 241);
+  font-weight: 500;
+  font-size: 20px;
+  
 }
 /* End Navbar */
+
+
+
+
 
 /* Home Page */
 
 /* Header */
 .headerpage {
-  margin-top: 10px;
   width: 100%;
   height: 100vh;
-  background: rgb(71, 15, 231);
-  background: linear-gradient(
-    60deg,
-    rgba(71, 15, 231, 1) 0%,
-    rgba(16, 93, 209, 0.6) 64%,
-    rgba(9, 17, 206, 0.67) 100%
-  );
+  background-image: url("../../assets/img/hero-sec.png");
+  background-size: cover;
 }
-.header-tittle {
+.hero {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.header-title {
   color: white;
-  padding: 80px 0 20px 0;
+  padding-bottom: 20px;
 }
-.header-tittle h1 {
-  margin-top: 50px;
-}
-.header-tittle h2 {
-  margin-top: 10px;
-}
-.header-tittle h2 span {
+.header-title h3 span {
   font-weight: bold;
 }
 .search-bar {
   display: flex;
-  padding: 10px 0;
 }
 .search-bar input {
-  padding: 13px;
-  width: 30%;
+  padding-left: 15px;
+  width: 100%;
   border-radius: 20px;
 }
 .search-bar button {
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 22px;
-  width: 10%;
+  width: max-content;
   border-radius: 20px;
   background-color: rgba(25, 4, 130, 1);
   color: white;
-  padding: 10px;
 }
 /* End Header */
 
 /* Section Kost */
 .section-kost {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
-.section-tittle {
+.section-title {
   padding: 50px 0 10px 0;
 }
 .line {
@@ -93,186 +119,612 @@
   padding: 60px 0 20px 0;
 }
 .card {
-  margin: 0 20px 0 20px;
+  margin: -30px 20px 0 20px;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+}
+.card-spec .button {
+  margin-left: 18%;
 }
 /* End Section Kost*/
 
-/* End Home Page */
-
-/* Login Page */
-.login {
-  position: absolute;
+/* Testimonial */
+.testi-container {
   width: 100%;
   height: 100vh;
-  background: rgb(101, 116, 224);
-  background: linear-gradient(
-    0deg,
-    rgba(101, 116, 224, 0.41) 0%,
-    rgba(101, 116, 224, 1) 100%
-  );
+  background-image: url("../../assets/img/hero-sec.png");
+  background-size: cover;
 }
-
-.login .back-button {
-  margin-top: 30px;
-  margin-left: 45px;
-  font-size: 35px;
-  cursor: pointer;
-  color: white;
-}
-
-.login .title {
-  color: white;
-  font-weight: 800;
-  margin-top: 1rem;
-  margin-left: 15rem;
-  margin-bottom: 10rem;
-}
-
-.login .title p {
-  color: white;
-  font-weight: 200;
-  margin-left: auto;
-}
-
-.login .choice {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: rgba(25, 4, 130);
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  display: flex;
-}
-
-.login .choice:hover {
-  background-color: #6574e0; /* Warna latar belakang saat dihover */
-}
-
-.login .choice i {
-  margin-left: 20px;
-  font-size: 40px;
-  color: black;
-}
-
-.login .help-center {
-  text-align: center;
-  color: white;
-  margin-top: 3rem;
-}
-
-/* End Login Page */
-
-/* Login User Page */
-.userlogin {
-  position: absolute;
+.section-testimonial {
+  position: relative;
+  max-width: 900px;
   width: 100%;
-  height: 105vh;
-  background: rgb(101, 116, 224);
-  background: linear-gradient(
-    0deg,
-    rgba(101, 116, 224, 0.41) 0%,
-    rgba(101, 116, 224, 1) 100%
-  );
 }
-
-.userlogin .back-button {
-  margin-top: 30px;
-  margin-left: 45px;
-  font-size: 35px;
-  cursor: pointer;
-  color: white;
+.section-testimonial .img-testi {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-
-.userlogin .title {
-  color: white;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-left: 15rem;
+.testi-content p {
+  font-size: 14px;
+  font-weight: 400;
 }
-
-.userlogin .choice {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin-top: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  display: flex;
+.testi-content .quote-icon {
+  font-size: 30px;
+  color: #5064e8;
 }
-
-.userlogin .choice:hover {
-  background-color: #6574e0; /* Warna latar belakang saat dihover */
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
 }
-
-.userlogin .choice img {
-  margin-left: 5px;
-  height: 40px;
+.details .job {
+  font-size: 14px;
+  font-weight: 600;
 }
+/* End Testimonial */
 
-.userlogin Form {
-  margin-top: 1rem;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  font-size: 10px;
+/* About */
+.logo-about {
+  width: 75vh;
+  height: 75vh;
+  margin-left: 10%;
+  margin-top: 50%;
 }
-
-.userlogin .form-control {
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 17px;
+.tentang {
+  background-image: url(../../assets/img/about-bg.png);
 }
-
-.userlogin .form-label {
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-}
-
-.userlogin Button {
-  border-radius: 20px;
-  margin-top: 16px;
-  width: 100%;
-  padding: 10px;
-
+.tentang .about-card .card {
   background-color: #6574e0;
 }
+.tentang .about-card .card:nth-child(1) {
+  margin-left: -4rem;
+  margin-top: 6rem;
+}
+.tentang .about-card .card:nth-child(2) {
+  margin-left: 12rem;
+  margin-top: 4.5rem;
+}
+.tentang .about-card .card:nth-child(3) {
+  margin-left: 2rem;
+  margin-top: 8rem;
+  margin-bottom: -50px;
+}
+/* End About */
 
-.userlogin hr {
-  color: white;
-  margin-top: 20px;
+/* End Home Page */
+
+/* ================================================================================================ */
+
+/* Login User Page */
+.user-login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
 }
 
-.userlogin .info {
-  margin-top: 10px;
-  color: white;
-  margin-left: 30rem;
-  margin-right: 30rem;
+.user-login .row .colum {
+  height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.user-login .title img {
+  width: 30%;
+}
+
+.user-login .form-control {
+  width: 300px;
+}
+
+.user-login .title {
+  justify-content: center;
   text-align: center;
+  margin-top: 50px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.user-login button {
+  padding-left: 125px;
+  padding-right: 125px;
+  background-color: rgba(25, 4, 130, 1);
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.user-login .link {
+  margin-left: 180px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.user-login .info {
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.user-login .img-wrapper {
+  width: 60%;
+  margin-top: 20px;
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+
+.user-login form {
+  animation-name: bounceIn;
+  animation-duration: 1s;
 }
 
 /* End Login USer Page */
+
+/* Register Page */
+.register {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
+}
+
+.register .row .colum {
+  height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.register .title img {
+  width: 30%;
+}
+
+.register .form-control {
+  width: 300px;
+}
+
+.register .title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.register button {
+  padding-left: 110px;
+  padding-right: 110px;
+  background-color: rgba(25, 4, 130, 1);
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.register .link {
+  margin-left: 180px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.register .info {
+  font-size: 13px;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+
+.register .img-wrapper {
+  width: 60%;
+  margin-top: 20px;
+  animation-name: zoomIn;
+  animation-duration: 2s;
+}
+
+.register form {
+  animation-name: bounceIn;
+  animation-duration: 1s;
+}
+/* End Register Page */
+
+/* Forgot Password Page */
+.forgot-password {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
+}
+
+.forgot-password .row .colum {
+  height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.forgot-password .title img {
+  width: 30%;
+}
+
+.forgot-password .form-control {
+  width: 300px;
+}
+
+.forgot-password .title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.forgot-password .title p {
+  font-size: 15px;
+}
+
+.forgot-password button {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: rgba(25, 4, 130, 1);
+}
+
+.forgot-password .img-wrapper {
+  width: 60%;
+  margin-top: 20px;
+}
+
+/* End Forgot Password Page */
+
+/* NewPassword Page */
+.new-password {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
+}
+
+.new-password .row .colum {
+  height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.new-password .title img {
+  width: 30%;
+}
+
+.new-password .form-control {
+  width: 300px;
+}
+
+.new-password .title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.new-password .title p {
+  font-size: 15px;
+}
+
+.new-password button {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: rgba(25, 4, 130, 1);
+}
+
+.new-password .img-wrapper {
+  width: 60%;
+  margin-top: 20px;
+}
+/* Edn NewPassword Page */
+
+/* OTP Page */
+.otp {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
+}
+
+.otp .row .colum {
+  height: 100vh;
+  background-color: #f5f8ff;
+}
+
+.otp .title img {
+  width: 50%;
+}
+
+.otp .form-control {
+  width: 300px;
+}
+
+.otp .title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.otp .title p {
+  font-size: 15px;
+}
+
+.otp button {
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-top: 15px;
+  background-color: rgba(25, 4, 130, 1);
+}
+
+.otp form div {
+  display: flex;
+  align-items: center;
+}
+
+.otp form div input {
+  width: 3rem !important;
+  height: 3rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.otp form div input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.otp .img-wrapper {
+  width: 60%;
+  margin-top: 20px;
+}
+/* End OTP Page */
+
+
+/* Pengajuan Page */
+.pengajuan{
+    position: absolute;
+    width: 100%;
+    height: 110vh;
+    background:
+      rgba(101, 115, 224, 0.098)
+}
+
+.pengajuan button{
+  background-color: #190482;
+  padding-left: 90px;
+  padding-right: 90px;
+  
+}
+
+
+#progressbar {
+  color:rgba(194, 217, 255, 1);
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 13px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+#progressbar #step1:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+#progressbar #step2:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+}
+
+#progressbar #step3:before {
+  content: '\f058';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-right: 0;
+  text-align: center;
+}
+
+#progressbar #step4:before {
+  content: '\f111';
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  width: 37px;
+  margin-right: 0;
+  text-align: center;
+}
+
+#progressbar li:before {
+  line-height: 37px;
+  display: block;
+  font-size: 12px;
+  background: rgba(194, 217, 255, 1);
+  border-radius: 50%;
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: rgba(194, 217, 255, 1);
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 15px;
+  z-index: -1;
+}
+
+#progressbar li:nth-child(1):after {
+  left: 1%;
+  width: 100%
+}
+
+#progressbar li:nth-child(2):after {
+  left: 1%;
+  width: 100%;
+}
+
+#progressbar li:nth-child(3):after {
+  left: 1%;
+  width: 100%;
+}
+
+#progressbar li:nth-child(4) {
+  left: 0;
+  width: 37px;
+}
+
+#progressbar li:nth-child(4):after {
+  left: 0;
+  width: 0;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background:rgba(4, 34, 224, 1);
+}
+
+/* End Pengajuan Page */
+
+/* Konfirmasi Page */
+.confirm {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:
+    rgba(101, 115, 224, 0.098)
+}
+
+.confirm .notif{
+  margin: 100px;
+  margin-left:500px;
+  margin-right: 500px; 
+}
+
+.confirm button{
+  background-color: #190482;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+/* End Konfirmasi Page */
+
+/* Payment Page */
+.payment {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:
+    rgba(101, 115, 224, 0.098)
+}
+
+.payment .notif{
+  margin: 100px;
+  margin-left:500px;
+  margin-right: 500px; 
+}
+
+.payment button{
+  background-color: #190482;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.payment .modal-header{
+  background-color: #190482;
+}
+
+.payment .floating-card {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.payment .modal-body {
+  margin-top: 125px;
+}
+
+.payment .payment2{
+  margin-bottom: 80px;
+}
+/* End Payment Page */
+
+/* Checin Page */
+.checkin{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:
+    rgba(101, 115, 224, 0.098)
+}
+
+.checkin button{
+  background-color: #190482;
+  padding-left: 90px;
+  padding-right: 90px;
+
+}
+.checkin .notif{
+  margin: 100px;
+  margin-left:300px;
+  margin-right: 300px; 
+}
+/* End Checin Page */
+
 
 /* Footer */
 .footer {
   background-color: #6574e0 !important;
 }
+.footer-logo {
+  width: 20%;
+}
 .footer-kost {
   font-weight: 600;
   color: white;
 }
+.footer-syarat ul {
+  list-style-type: none;
+}
+.footer-contact ul {
+  list-style-type: none;
+}
 .copyright {
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* End Footer */
