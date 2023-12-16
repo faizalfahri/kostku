@@ -168,7 +168,7 @@ const HomePage = () => {
 
       {/* ABOUT */}
       <section
-        className="tentang d-flex flex-column align-items-center justify-content-center"
+        className="tentang d-flex flex-column align-items-center justify-content-center bg-light"
         id="tentangkami"
       >
         <Container>
@@ -181,8 +181,8 @@ const HomePage = () => {
               <div className="about-card">
                 <Card
                   border="secondary"
-                  style={{ width: "27rem" }}
-                  className="mb-5 text-light shadow-lg text-center"
+                  style={{ width: "25rem" }}
+                  className="mt-4 mb-3 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="500"
@@ -199,7 +199,7 @@ const HomePage = () => {
                 </Card>
                 <Card
                   style={{ width: "25rem" }}
-                  className="mb-5 text-light shadow-lg text-center"
+                  className="mb-3 text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
                   data-aos-duration="1000"
@@ -214,7 +214,7 @@ const HomePage = () => {
                   </Card.Body>
                 </Card>
                 <Card
-                  style={{ width: "27rem" }}
+                  style={{ width: "25rem" }}
                   className="text-light shadow-lg text-center"
                   data-aos="fade-right"
                   data-aos-easing="linear"
@@ -250,18 +250,12 @@ const HomePage = () => {
         >
           <path
             fill="#f8f9fa"
-            fill-opacity ="1"
-            d="M0,160L30,154.7C60,149,120,139,180,149.3C240,160,300,192,360,197.3C420,203,480,181,540,197.3C600,213,660,267,720,240C780,213,840,107,900,80C960,53,1020,107,1080,138.7C1140,171,1200,181,1260,165.3C1320,149,1380,107,1410,85.3L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+            fill-opacity="1"
+            d="M0,192L40,208C80,224,160,256,240,256C320,256,400,224,480,224C560,224,640,256,720,266.7C800,277,880,267,960,272C1040,277,1120,299,1200,288C1280,277,1360,235,1400,213.3L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
           ></path>
         </svg>
       </section>
       {/* END ABOUT */}
-
-      {/* About Kostku */}
-      <div bg="light">
-
-      </div>
-      {/* End About Kostku */}
 
       <FooterComponent />
     </div>
