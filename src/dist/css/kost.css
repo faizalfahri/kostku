@@ -34,3 +34,16 @@
   overflow: hidden;
   border: 8px solid #f8f9fa;
 }
+.hubungi-button {
+  width: 45%;
+}
+.sewa-button {
+  width: 45%;
+}
+.specific-kost {
+  margin: 4rem 0 4rem 0;
+}
+.nama-detail-kost {
+  background-color: #6574e0;
+  margin-top: -50px;
+}

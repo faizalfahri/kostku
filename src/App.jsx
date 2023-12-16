@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import PengajuanPage from "./pages/User/PengajuanPage";
 import Konfirmasi from "./pages/User/Konfirmasi";
 import ChekinPage from "./pages/User/ChekinPage";
+import AdminDashboard from "./pages/Admin/AdminDashboard";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/pengajuan" Component={PengajuanPage} />
         <Route path="/konfirmasi" Component={Konfirmasi} />
         <Route path="/checkin" Component={ChekinPage} />
+        <Route path="/admin" Component={AdminDashboard} />
 
 
       </Routes>

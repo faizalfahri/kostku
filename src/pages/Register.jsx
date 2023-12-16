@@ -11,24 +11,33 @@ const Register = () => {
             <BackButtonComponent />
             <div className="d-flex flex-column justify-content-center align-items-center">
               <div className="title">
-                <h2>Buat akun sekarang</h2>
-                <p>Dapatakan semua fitur Kostku</p>
+                <h3>Buat akun sekarang</h3>
                 <img src="../public/kostku-hitam.png" alt="logo" />
               </div>
               <Form>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                  <Form.Control type="Nama" placeholder="Nama Panggilan" />
+                <Form.Group className="mb-3">
+                  <Form.Control type="text" id="nama" placeholder="Nama Lengkap Sesuai KTP" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
-                  <Form.Control type="email" placeholder="Masukkan Email" />
+                  <Form.Control type="email" id="email" placeholder="Masukkan Email" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
-                  <Form.Control type="katasandi" placeholder="Kata sandi" />
+                <Form.Group className="mb-3">
+                  <Form.Control type="number" id="telp" placeholder="Masukkan No. Telepon" required />
+                </Form.Group>
+                <Form.Select aria-label="Default select example" className="mb-3" required >
+                  <option>Ingin Mendaftar Sebagai</option>
+                  <option value="1">Pencari Kost</option>
+                  <option value="2">Pemilik Kost</option>
+                </Form.Select>
+                <Form.Group className="mb-3">
+                  <Form.Control type="password" id="password" placeholder="Masukkan Kata sandi" required/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupPassword">
                   <Form.Control
-                    type="konfimasiSandi"
+                    type="password"
+                    id="conf_password"
                     placeholder="Konfirmasi Kata Sandi"
+                    required
                   />
                 </Form.Group>
               </Form>

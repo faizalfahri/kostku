@@ -34,7 +34,7 @@ function MyVerticallyCenteredModal(props) {
         >
         <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter" className="text-white py-3">
-            Metode Pembayaran
+                Metode Pembayaran
             </Modal.Title>
         </Modal.Header>
         <div className="floating-card ">

@@ -30,10 +30,10 @@ const PengajuanPage = () => {
                     </div>
                 </div>
             </div>
-            <Card className="mt-4">
-                <Card.Header as="h5">Pengajuan Sewa</Card.Header>
+            <Card className="my-5">
+                <Card.Header as="h5" className="fw-bold">Pengajuan Sewa</Card.Header>
                 <Card.Body>
-                    <Card.Title className="fw-bold">Informasi Penyewa</Card.Title>
+                    <Card.Title className="text-center">Informasi Penyewa</Card.Title>
                 <Form>
                     <Form.Group className="mb-3" controlId="formGroupName">
                         <Form.Label>Nama Lengkap</Form.Label>

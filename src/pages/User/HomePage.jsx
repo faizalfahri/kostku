@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import NavbarComponent from "../../components/NavbarComponent";
 import FooterComponent from "../../components/FooterComponent";
@@ -26,6 +27,7 @@ import imgsihir from "../../assets/img/KostNenekSihir.jpeg";
 import about_asset from "../../assets/img/Saly-31.png";
 
 import testimoni_list from "../../utils/data-testimoni";
+import kost_list from "../../utils/data-kost";
 
 const HomePage = () => {
   useEffect(() => {
@@ -74,105 +76,46 @@ const HomePage = () => {
           </div>
 
           <div className="section-card">
-            <Card
-              style={{ width: "25rem" }}
-              className="shadow-lg"
-              data-aos="flip-left"
-              data-aos-duration="1000"
-            >
-              <Card.Img variant="top" src={imgperi} />
-              <Card.Body>
-                <Card.Title className="fw-bold">Kost Ibu Peri</Card.Title>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  disabled
-                  className="mt-1 mb-2"
+            {kost_list.map((item) => {
+              return (
+                <Card
+                  style={{ width: "25rem" }}
+                  className="shadow-lg"
+                  data-aos="flip-left"
                 >
-                  Putri
-                </Button>
-                <Card.Text className="card-spec">
-                  Spesifikasi: <br></br>
-                  Kamar Mandi Dalam - Kasur - Wifi - AC
-                </Card.Text>
-                <Card.Text className="card-loc border-bottom border-dark fw-bold">
-                  Jakarta Utara
-                </Card.Text>
-                <Card.Text className="card-spec">
-                  Harga Sewa: <br></br>
-                  <span className="fw-bold">Rp.1.200.000/Bulan</span>
-                  <Button className="button pe-4 ps-4">Cek</Button>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-
-            <Card
-              style={{ width: "25rem" }}
-              className="shadow-lg"
-              data-aos="flip-left"
-              data-aos-duration="1000"
-            >
-              <Card.Img variant="top" src={imgbarbie} />
-              <Card.Body>
-                <Card.Title className="fw-bold">Kost Ibu Barbie</Card.Title>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  disabled
-                  className="mt-1 mb-2"
-                >
-                  Putri
-                </Button>
-                <Card.Text className="card-spec">
-                  Spesifikasi: <br></br>
-                  Kamar Mandi Dalam - Kasur - Wifi - AC
-                </Card.Text>
-                <Card.Text className="card-loc border-bottom border-dark fw-bold">
-                  Depok
-                </Card.Text>
-                <Card.Text className="card-spec">
-                  Harga Sewa: <br></br>
-                  <span className="fw-bold">Rp.1.050.000/Bulan</span>
-                  <Button className="button pe-4 ps-4">Cek</Button>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-
-            <Card
-              style={{ width: "25rem" }}
-              className="shadow-lg"
-              data-aos="flip-left"
-              data-aos-duration="500"
-            >
-              <Card.Img variant="top" src={imgsihir} />
-              <Card.Body>
-                <Card.Title className="fw-bold">Kost Nenek Sihir</Card.Title>
-                <Button
-                  variant="secondary"
-                  size="sm"
-                  disabled
-                  className="mt-1 mb-2"
-                >
-                  Putri
-                </Button>
-                <Card.Text className="card-spec">
-                  Spesifikasi: <br></br>
-                  Kamar Mandi Dalam - Kasur - Wifi - AC
-                </Card.Text>
-                <Card.Text className="card-loc border-bottom border-dark fw-bold">
-                  Tangerang Selatan
-                </Card.Text>
-                <Card.Text className="card-spec">
-                  Harga Sewa: <br></br>
-                  <span className="fw-bold">Rp.900.000/Bulan</span>
-                  <Button className="button pe-4 ps-4">Cek</Button>
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                  <Card.Img variant="top" src={item.image} />
+                  <Card.Body>
+                    <Card.Title className="fw-bold">
+                      {item.name_kost}
+                    </Card.Title>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      disabled
+                      className="mt-1 mb-2"
+                    >
+                      {item.type_kost}
+                    </Button>
+                    <Card.Text className="card-spec">
+                      Spesifikasi: <br></br>
+                      {item.spec_kost}
+                    </Card.Text>
+                    <Card.Text className="card-loc border-bottom border-dark fw-bold">
+                      {item.location}
+                    </Card.Text>
+                    <Card.Text className="card-spec">
+                      Harga Sewa: <br></br>
+                      <span className="fw-bold">{item.price}</span>
+                      <Link to="/detailkost" className="btn button text-light pe-4 ps-4">Cek</Link>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              );
+            })}
           </div>
 
           <div className="d-flex justify-content-center mt-4 mb-5">
-            <Button className="button">Lainnya</Button>
+            <Link to="/kost" className="btn button text-white">Lainnya</Link>
           </div>
         </Container>
       </div>

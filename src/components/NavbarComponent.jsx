@@ -1,13 +1,26 @@
 import { useState } from "react";
 import { Navbar, Container, Nav, Button, Modal } from "react-bootstrap";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from "./../assets/img/kostku-hitam.png";
 import { Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
+  const handleBothFunctions = () => {
+    handleShow();
+    handleLogin();
+  };
 
   return (
     <div>
@@ -29,13 +42,15 @@ const NavbarComponent = () => {
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">
-            <img
-              src={logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top logo"
-              alt="kostku logo"
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                width="30"
+                height="30"
+                className="d-inline-block align-top logo"
+                alt="kostku logo"
+              />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -46,13 +61,29 @@ const NavbarComponent = () => {
               <Nav.Link href="#tentang" className="nav-link">
                 Tentang Kami
               </Nav.Link>
-              <Button
-                variant="primary"
-                onClick={handleShow}
-                className="ms-3 button btn text-light"
-              >
-                Masuk
-              </Button>
+              {isLoggedIn ? (
+                <NavDropdown
+                  title="user"
+                  menuVariant="dark"
+                >
+                  <NavDropdown.Item href="#action/3.1">Profile</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Settings
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item onClick={handleLogout}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+                <Button
+                  variant="primary"
+                  onClick={handleBothFunctions}
+                  className="ms-3 button btn text-light"
+                  >
+                    Masuk
+                  </Button>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

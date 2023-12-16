@@ -35,9 +35,9 @@ const ChekinPage = () => {
             </div>
             <div className="notif">
             <Alert show={show} variant="primary">
-                <Alert.Heading className="text-black fw-bold">Terimakasih Telah Melakakukan Pembayaran</Alert.Heading>
+                <Alert.Heading className="text-black fw-bold">Terimakasih Telah Melakukan Pembayaran</Alert.Heading>
                 <p  className="text-black">
-                Jika sudah sampai dikosan, jangan lupa klik tombol Check-In dibawah ini!
+                    Kalau sudah sampai di tempat, jangan lupa klik tombol Check-In dibawah ini!
                 </p>
                 <hr />
                 <div className="d-flex justify-content-end">

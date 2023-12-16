@@ -6,7 +6,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 const BackButtonComponent = () => {
   const navigate = useNavigate();
   const goBack = () => {
-    navigate("/", { replace: true });
+    navigate(-1, { replace: true });
   };
   return (
     <div className="pointer" onClick={goBack}>

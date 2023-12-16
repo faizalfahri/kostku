@@ -1,8 +1,21 @@
 import { Form, Col, Row, Container, Button } from "react-bootstrap";
 import BackButtonComponent from "../../components/BackButtonComponent";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const UserLogin = () => {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    axios
+      .get("http://localhost:3000/users")
+      .then((response) => {
+        if (response.data.role == "admin") {
+          navigate("/admin", { replace: true });
+        } else {
+          navigate("/", { replace: true });
+        }
+      });
+  }
   return (
     <div className="user-login">
       <Container fluid>
@@ -17,7 +30,7 @@ const UserLogin = () => {
               </div>
               <Form>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
-                  <Form.Label>Email address</Form.Label>
+                  <Form.Label>Alamat Email</Form.Label>
                   <Form.Control type="email" placeholder="Masukkan Email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formGroupPassword">
@@ -33,7 +46,7 @@ const UserLogin = () => {
                   Lupa Password?
                 </Link>
               </div>
-              <Button variant="primary">Masuk</Button>
+              <Button variant="primary" onClick={handleLogin}>Masuk</Button>
               <div className="d-flex flex-column justify-content-center align-items-center mt-2 info">
                 <p>
                   Belum punya akun Kostku?{" "}
