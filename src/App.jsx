@@ -10,6 +10,12 @@ import Register from "./pages/Register";
 import PengajuanPage from "./pages/User/PengajuanPage";
 import Konfirmasi from "./pages/User/Konfirmasi";
 import ChekinPage from "./pages/User/ChekinPage";
+import ProfilePage from "./pages/User/ProfilePage";
+import PengaturanPage from "./pages/User/PengaturanPage";
+import SyaratKetentuanPage from "./pages/User/SyaratKetentuanPage";
+import { KebijakanPage } from "./pages/User/KebijakanPage";
+import EditProfilePage from "./pages/User/EditProfilePage";
+
 
 function App() {
   return (
@@ -26,6 +32,13 @@ function App() {
         <Route path="/pengajuan" Component={PengajuanPage} />
         <Route path="/konfirmasi" Component={Konfirmasi} />
         <Route path="/checkin" Component={ChekinPage} />
+        <Route path="/profile" Component={ProfilePage} />
+        <Route path="/setting" Component={PengaturanPage} />
+        <Route path="/syaratK" Component={SyaratKetentuanPage} />
+        <Route path="/kebijakan" Component={KebijakanPage} />
+        <Route path="/editprofile" Component={EditProfilePage} />
+        
+      
 
 
       </Routes>

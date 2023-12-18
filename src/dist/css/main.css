@@ -56,8 +56,18 @@
 }
 /* End Navbar */
 
+/* navbar 3 */
+.custom-nav-3{
+  top: -5px;
+  margin-bottom: -15px;
+  height: 75px;
+}
 
-
+.custom-nav-3 .nav-link-3{
+  color: rgba(25, 4, 130, 1);
+  font-weight: 500;
+  font-size: 20px;}
+/* end navbar 3 */
 
 
 /* Home Page */
@@ -702,6 +712,201 @@
 }
 /* End Checin Page */
 
+/* Profile Page */
+.profile {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.profile .profile-heading{
+  color: rgba(25, 4, 130, 1);
+}
+.profile .colum{
+  background-color: rgba(4, 34, 224, 0.7);
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+}
+
+.profile .colum .menu{
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.profile .colum .menu button{
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.profile .colum .menu button i{ 
+  font-size: 24px;
+}
+
+.profile .colum .menu button span{ 
+  flex-grow: 1;
+  margin-right: 50px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.profile .back-button{
+  font-size: 50px;
+}
+
+.profile .card{
+  margin-top: 165px;
+  margin-left:100px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile .text-container {
+  flex: 1;
+}
+
+.profile .user-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.profile .custom-button {
+  position: absolute;
+  top: 50%;
+  right: 20px; 
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.modal-logout {
+  background-color: #190482;
+}
+
+
+.profile a{
+  text-decoration: none;
+}
+
+/* End Profile Page */
+
+/* Pengaturan  */
+
+.pengaturan .notifikasi{
+  text-align: start;
+}
+
+.pengaturan .notifikasi p{
+  margin-left: 15px;
+  margin-bottom: -6px;
+}
+
+.pengaturan .notifikasi button{
+  width: 150px;
+  margin-left: 15px;
+  text-align: start;
+  font-size: 18px;
+}
+
+.profile .accordion-header span i {
+  margin-right: 12px;
+  font-size:18px;
+}
+
+
+
+
+.pengaturan .form-check{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* End Pangatuaran */
+
+/* Kebijakan Page */
+.kebijakan .card {
+  margin-top: -10px;
+  margin-top: 100px;
+  
+}
+/* End Kebijakan Page */
+
+/* Edit Profile */
+.edit .colum{
+  background-color: #f5f8ff;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+}
+
+.edit {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(101, 116, 224, 0.41) 0%,
+    rgba(101, 116, 224, 1) 100%
+  );
+}
+
+.edit .colum .edit-menu{
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.edit .colum .edit-menu button{
+  padding-left: 175px;
+  padding-right: 175px;
+  background-color: rgba(25, 4, 130, 1);
+  animation-name: bounceIn;
+}
+
+.edit .form-control {
+  width: 500px;
+}
+
+.edit .card{
+  width: 500px;
+  margin-right: 50px;
+
+}
+
+.edit .card div{
+  margin-left: 15px;
+}
+
+
+
+
+/* Edit Profile End */
 
 /* Footer */
 .footer {
@@ -718,3 +923,4 @@
   color: white;
 }
 /* End Footer */
+
