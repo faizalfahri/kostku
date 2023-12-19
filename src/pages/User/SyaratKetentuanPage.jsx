@@ -89,6 +89,22 @@ return (
                                 </p>
                                 </Accordion.Body>
                             </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>{<span><i className="fa-solid fa-list"></i>Pengakhiran</span>}</Accordion.Header>
+                                <Accordion.Body>
+                                <p style={{ textAlign: 'justify' }}>
+                                Kami dapat mengakhiri S&K ini secara sepihak dan tanpa pemberitahuan sebelumnya kepada Anda. Untuk menghindari keragu-raguan,
+                                pengakhiran dapat terjadi karena sebab-sebab yang termasuk namun tidak terbatas pada kegagalan memenuhi atau mentaati sebagian 
+                                atau seluruh S&K ini, terdapat kesepakatan, pernyataan, jaminan atau janji dalam S&K ini yang ternyata tidak benar, tidak akurat atau 
+                                menyesatkan, terdapat peraturan dan/atau kebijakan dan/atau tindakan administratif Pemerintah seperti penarikan izin operasional atau perintah 
+                                untuk menghentikan kegiatan usaha yang menyebabkan Kami tidak dapat menjalankan kewajibannya berdasarkan S&K ini.
+                                <br /> <br />
+                                Dalam hal terjadinya pengakhiran S&K ini, Anda mungkin tetap terikat pada kewajiban dalam S&K ini, termasuk tetapi tidak terbatas pada jaminan, ganti rugi, pengabaian dan pembatasan kewajiban yang telah Anda setujui sebelumnya.
+                                Apabila terdapat data tertahan dalam penguasaan Kami, Anda setuju bahwa Kami dapat sewaktu-waktu mengurangi dana tertahan tersebut untuk memenuhi kewajiban Anda baik kepada Kami.
+                                Anda sepakat untuk mengesampingkan Pasal 1266 Kitab Undang-Undang Hukum Perdata Indonesia sejauh bahwa pernyataan Pengadilan diperlukan untuk pengakhiran S&K ini.
+                                </p>
+                                </Accordion.Body>
+                            </Accordion.Item>
                             </Accordion>
 
                         
