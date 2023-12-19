@@ -40,7 +40,7 @@ return (
                     <h3 className="fw-bold text-end profile-heading"><BackButton2Component /></h3>
                     <Card>
                         <Card.Header as="h4" className="fw-bold">Kebijakan Privasi</Card.Header>
-                        <Card.Body>
+                        <Card.Body style={{ maxHeight: '400px', overflow: 'auto' }}>                       
                         <Accordion defaultActiveKey={['0']} alwaysOpen>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>{<span><i className="fa-solid fa-circle-exclamation"></i>Keterangan</span>}</Accordion.Header>
@@ -59,6 +59,78 @@ return (
                                 dianggap telah membaca, mengerti, memahami dan menyetujui seluruh isi yang tertuang dalam kebijakan
                                 ini. Apabila pengguna tidak setuju dengan sebagian atau seluruh iisi kebijakan ini, pengguna dapat
                                 meninggalkan platform yang Kosku kelola.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>{<span><i className="fa-solid fa-user-check"></i>Informasi Pribadi</span>}</Accordion.Header>
+                                <Accordion.Body>
+                                <p style={{ textAlign: 'justify' }}>
+                                Informasi Pribadi adalah setiap informasi atau keterangan tentang individu yang benar dan nyata yang melekat
+                                dan dapat diidentifikasi secara wajar dari informasi atau keterangan tersebut baik langsung maupun tidak langsung, 
+                                pada masing-masing individu. Informasi Pribadi yang Kami kumpulkan diantaranya adalah:
+                                </p> 
+                                <p style={{ textAlign: 'justify' }}>
+                                <ol>
+                                    <li>Username / nama pengguna, termasuk nama asli dari Anda sesuai dengan tanda pengenal</li>
+                                    <li>Alamat email</li>
+                                    <li>Nomor telepon</li>
+                                    <li>Alamat tempat tinggal</li>
+                                    <li>Nomor identitas diri Anda</li>
+                                    <li>Nomor rekening bank Anda</li>
+                                    <li>Identitas pengguna Mamikos termasuk kredensial log in</li>
+                                    <li>Data transaksi, termasuk semua detail pembayaran, reservasi, dan detail booking yang dilakukan melalui platform ini</li>
+                                    <li>Riwayat pemesanan, termasuk semua informasi booking di platform ini</li>
+                                    <li>Komentar atau umpan balik yang Anda berikan pada konten platform ini</li>
+                                </ol>
+                                </p>
+                                <p style={{ textAlign: 'justify' }}>
+                                    Selain itu kami juga dapat mengumpulkan informasi non-pribadi yang dapat digunakan untuk
+                                    mengidentifikasi Anda termasuk diantaranya adalah:
+                                </p>
+                                <p style={{ textAlign: 'justify' }}>
+                                <ol>
+                                    <li>Alamat protokol internet (internet protocol/IP) dan lokasi Wi-Fi</li>
+                                    <li>Data lokasi geografis</li>
+                                    <li>Data perangkat</li>
+                                    <li>Data catatan (log)</li>
+                                    <li>Jenis sistem pengoperasian</li>
+                                    <li>Kebangsaan</li>
+                                    <li>Preferensi pencarian Anda, dan/atau</li>
+                                    <li>Data-data umum lainnya yang ada pada Internet</li>
+                                </ol>
+                                </p>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>{<span><i className="fa-solid fa-file-contract"></i>Pembaruan dan Persetujuan Kebijakan Privasi Data</span>}</Accordion.Header>
+                                <Accordion.Body>
+                                <p style={{ textAlign: 'justify' }}>
+                                Kebijakan ini mungkin diubah dan/atau diperbaharui dari waktu ke waktu sebagai upaya Kami dalam menyesuaikan 
+                                dengan perubahan hukum dan peraturan yang ada tanpa pemberitahuan sebelumnya. Kami menyarankan untuk membaca 
+                                secara seksama dan memeriksa kembali laman Kebijakan ini dari waktu ke waktu untuk mengetahui perubahan apapun.
+                                Dengan tetap mengakses dan menggunakan platform, maka Anda dianggap menyetujui perubahan-perubahan dalam Kebijakan 
+                                yang ada. Anda memahami bahwa versi terbaru dari Kebijakan ini akan menggantikan semua versi sebelumnya.
+                                </p> 
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="3">
+                                <Accordion.Header>{<span><i className="fa-solid fa-users"></i>Pihak Ketiga</span>}</Accordion.Header>
+                                <Accordion.Body>
+                                <p style={{ textAlign: 'justify' }}>
+                                Platform dan materi pemasaran kami dapat berisi tautan ke situs web yang dioperasikan oleh pihak ketiga. 
+                                Kami tidak mengontrol atau menerima tanggung jawab atas kegiatan situs web pihak ketiga terkait pengumpulan,
+                                penggunaan, penyimpanan, dan pengungkapan Informasi Pribadi Anda oleh pihak ketiga tersebut. 
+                                Silahkan membaca syarat dan ketentuan serta kebijakan privasi dari situs web pihak ketiga untuk mengetahui 
+                                bagaimana mereka mengumpulkan dan menggunakan Informasi Pribadi Anda.
+                                </p> 
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header>{<span><i className="fa-solid fa-address-card"></i>Kontak Kami</span>}</Accordion.Header>
+                                <Accordion.Body>
+                                <p style={{ textAlign: 'justify' }}>
+                                Kapanpun Anda dapat melakukan kontak dengan kami di sini.
+                                </p> 
                                 </Accordion.Body>
                             </Accordion.Item>
                             </Accordion>

@@ -39,7 +39,7 @@ return (
                     <h3 className="fw-bold text-end profile-heading"><BackButton2Component /></h3>
                     <Card>
                         <Card.Header as="h4" className="fw-bold">Syarat dan Ketentuan</Card.Header>
-                        <Card.Body>
+                        <Card.Body style={{ maxHeight: '400px', overflow: 'auto' }}>                       
                         <Accordion defaultActiveKey={['0']} alwaysOpen>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>{<span><i className="fa-solid fa-circle-exclamation"></i>Keterangan</span>}</Accordion.Header>

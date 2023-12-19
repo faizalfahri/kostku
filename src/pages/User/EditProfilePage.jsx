@@ -105,14 +105,14 @@ const EditProfilePage = () => {
                         </Card.Body>
                     </Card>
 
-                    <Modal show={showSimpan} onHide={handleClose} animation={false} centered>
+                    <Modal show={showSimpan} onHide={handleClose} animation={true} centered>
                         <Modal.Header closeButton>
                         <Modal.Title className="fw-bold">Simpan Perubahan</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>Anda yakin ingin merubah data profile?</Modal.Body>
                         <Modal.Footer>
                             <Button variant="secondary" onClick={handleClose}>Batal</Button>
-                            <Button variant="primary"  className="modal-logout" onClick={handleEdit}>Iya</Button>
+                            <Button variant="primary"  style={{backgroundColor: '#190482'}} className="modal-logout" onClick={handleEdit}>Iya</Button>
                         </Modal.Footer>
                     </Modal>
                 </Col>
