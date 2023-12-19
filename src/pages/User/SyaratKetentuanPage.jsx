@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, Row, Col, Button, Card, Modal, Accordion} from "react-bootstrap"
 import BackButton2Component from "../../components/BackButton2Component";
 import { useState } from 'react';
@@ -58,9 +59,34 @@ return (
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header>{<span><i className="fa-solid fa-scroll"></i>Akun</span>}</Accordion.Header>
+                                <Accordion.Header>{<span><i className="fa-solid fa-square-person-confined"></i>Pemesanan (Booking), Check-in, Pindah Kamar (Relocation), dan Penjadwalan Kembali (Reschedule)</span>}</Accordion.Header>
                                 <Accordion.Body>
-                                
+                                <p style={{ textAlign: 'justify' }}>
+                                Penghuni dapat melakukan pemesanan Properti yang telah dipilih dengan ajukan sewa dan melakukan pembayaran sesuai ketentuan.
+                                Penghuni wajib melakukan check in pada menggunakan fitur klik “check in” melalui Platform Kami sesuai dengan tanggal yang tertera pada Kontrak. 
+                                <br /> <br />
+                                Apabila dalam waktu 5x24 jam sejak Tanggal Mulai Ngekos Penghuni tidak melakukan perubahan status tersebut maka Kami tidak dapat membantu dalam proses pengembalian dana. 
+                                Ketentuan ini tidak berlaku bagi Properti yang terdapat logo/flagging."Singgahsini, APIK, dan/atau Kos Pilihan" pada Platform
+                                Pindah (relocation) pada Properti yang telah Penghuni pilih hanya dapat dilakukan dapat dilakukan apabila :
+                                </p>
+                                <p style={{ textAlign: 'justify' }}>
+                                <ol>
+                                    <li>Transaksi pembayaran dilakukan di dalam dan melalui Platform ini dengan metode yang tersedia serta dibayarkan kepada atau melalui Kami;</li>
+                                    <li>Kamar yang telah dipesan tidak tersedia setelah pembayaran Penghuni lakukan maupun pada saat check-in;</li>
+                                    <li>Fasilitas yang terdapat pada kos tidak sesuai dengan yang tertera listing dan Platform ini. Ketidaksesuaian ini terbatas pada ada/tidaknya fasilitas yang tertulis, ketidaksesuaian seperti AC kurang dingin, ukuran kasur, kecepatan wifi tidak termasuk didalamnya dan/atau adanya pembatalan atau penolakan dari Pemilik atas pesanan (booking) yang sudah diajukan;</li>
+                                    <li>Pindah (relocation) dapat dilakukan dan disampaikan kepada Kami sampai dengan Tanggal Mulai Ngekos Penghuni yang tertuang dalam pesanan (booking) pada Platform ini.</li>
+                                </ol>
+                                </p>
+                                <p style={{ textAlign: 'justify' }}>
+                                Setiap adanya perubahan, penambahan dan pengurangan harga sewa yang timbul akibat dari reschedule merupakan keputusan 
+                                Pemilik dan Penghuni bersedia dan menerima atas perubahan tersebut.
+                                Apabila terdapat selisih harga atas biaya sewa atau transaksi yang terjadi akibat reschedule, maka selisih tersebut akan
+                                Kami kembalikan ke rekening Anda dalam waktu tidak lebih dari 1x24 jam sejak Tanggal Mulai Ngekos yang baru.
+                                <br /> <br />
+                                Penghuni memahami bahwa keputusan dan persetujuan reschedule merupakan kebijakan Pemilik sepenuhnya dan memperhatikan ketentuan.
+                                Dalam hal permohonan reschedule ditolak ataupun tidak ada konfirmasi yang diberikan Penghuni maupun Pemilik maka Tanggal Mulai 
+                                Ngekos adalah sebagaimana tanggal semula sebelum permintaan reschedule. 
+                                </p>
                                 </Accordion.Body>
                             </Accordion.Item>
                             </Accordion>

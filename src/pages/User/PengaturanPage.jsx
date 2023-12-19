@@ -93,10 +93,10 @@ const PengaturanPage = () => {
                             </Modal.Header>
                             <Modal.Body>Yakin untuk menghapus akun?</Modal.Body>
                             <Modal.Footer>
-                            <Button variant="primary"   onClick={handleClose}>
+                            <Button variant="primary" style={{backgroundColor: '#190482'}}  onClick={handleClose}>
                                 tidak
                             </Button>
-                            <Button variant="danger"style={{backgroundColor: '#190482'}} onClick={handleClose}>
+                            <Button variant="danger" onClick={handleClose}>
                                 Iya
                             </Button>
                             </Modal.Footer>
@@ -110,7 +110,7 @@ const PengaturanPage = () => {
                             <Button variant="secondary" onClick={handleClose}>
                                 Batal
                             </Button>
-                            <Button variant="primary" className="button-logout" onClick={handleLogout}>
+                            <Button variant="primary" style={{backgroundColor: '#190482'}} className="button-logout" onClick={handleLogout}>
                                 Logout
                             </Button>
                             </Modal.Footer>
